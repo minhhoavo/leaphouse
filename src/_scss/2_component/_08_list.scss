@@ -1,0 +1,226 @@
+/*------------------------------------------------------------
+list
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-list1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-list1__image {
+    .c-list1__img {
+        width: 100%;
+    }
+}
+
+.c-list1__box {
+    display: flex;
+}
+
+.c-list1__cat {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 6px 9px;
+    color: $color--fff;
+    background: $color--043b8e;
+    line-height: 1;
+    min-width: 60px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.c-list1__status {
+    display: inline-block;
+    padding: 5px 9px;
+    font-size: 1.4rem;
+    color: $color--15171b;
+    line-height: 1;
+    min-width: 60px;
+    text-align: center;
+    border: 1px solid $color--d7dbe3;
+
+    &.is-accept {
+        background: $color--d7dbe3;  
+    }
+}
+
+.c-list1__ttl {
+    color: $color--15171b;
+}
+
+
+.c-list2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    .c-list2__image {
+        position: relative;
+
+        &.is-disable {
+            pointer-events: none;
+
+            &::after {
+                content: "おかげさまで、 完売いたしました";
+                font-size: 2.4rem;
+                font-weight: 700;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: $color--fff;
+                position: absolute;
+                width: calc(100% - 166px);
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 0 83px;
+            }
+        }
+    }
+
+    .c-list2__status {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $color--dc3175;
+        padding: 9px 8px;
+        color: $color--fff;
+        min-width: 61px;
+        text-align: center;
+        z-index: 10;
+
+        &.is-soldout {
+            background: $color--043b8e;
+        }
+    }
+
+    .c-list2__content {
+        background: $color--f1f3f8;
+        color: $color--15171b;
+        padding: 23px 20px 21px;
+
+        .c-list2__ttl {
+            margin-bottom: 17px;
+        }
+
+        .c-list2__location {
+            margin-bottom: 6px;
+        }
+    }
+}
+
+.c-list2__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0;
+}
+
+.c-list2__price {
+    background-color: $color--fff;
+    padding: 3px 20px 7px 18px;
+    display: inline-block;
+}
+
+.c-list2__pricenum {
+    color: $color--043b8e;    
+}
+
+.c-list3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0;
+
+    .c-list3__ttl {
+        margin: 26px 0 2px;
+        font-feature-settings: "palt";
+    }
+
+    .c-list3__desc {
+        line-height: 1.88;
+    }
+
+    .c-list3__item {
+        width: calc((100% - 60px) / 3);
+        margin-right: 30px;
+        
+        &:nth-child(3n) {
+            margin-right: 0;
+
+            @include tab {
+                margin-right: 30px;
+            }
+
+            @include sp {
+                margin-right: 0;
+            }
+        }
+
+        @include tab {
+            width: calc((100% - 30px) / 2);
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        @include sp {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+.c-list4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 29px 0 0;
+
+    .c-list4__desc {
+        line-height: 1.88;
+        color: $color--333;
+        padding: 20px 0 30px;
+    }
+
+    .c-list4__item {
+        width: calc((100% - 60px) / 4);
+        margin-right: 20px;
+        
+        &:nth-child(4n) {
+            margin-right: 0;
+
+            @include tab {
+                margin-right: 20px;
+            }
+
+            @include sp {
+                margin-right: 0;
+            }
+        }
+
+        @include tab {
+            width: calc((100% - 40px) / 3);
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        @include sp {
+            width: calc((100% - 20px) / 2);
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(3n) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+

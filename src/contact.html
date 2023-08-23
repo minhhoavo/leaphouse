@@ -1,0 +1,242 @@
+<%- include('_layouts/layout', { title: 'Contact Page' }); -%>
+    <!-- @meta -->
+    <meta name="description" content="Contact page">
+    <!-- @@meta -->
+
+    <!-- @content -->
+    <main class="contact">
+        <div class="c-contact__header">
+            <h2 class="c-contact__title c-ttl__ac70">
+                CONTACT
+            </h2>
+            <p class="c-contact__subtitle c-txt__san20">お問い合わせ</p>
+            <p class="c-contact__des c-txt__san16">
+                各種お問い合わせはこちらからどうぞ。<br>
+                新築、建替え、リフォーム、リノベーション、その他、お気軽にご連絡ください。
+            </p>
+        </div>
+        <div class="c-contact__form">
+            <div class="l-container__w1040">
+                <form action="#" method="post">
+                    <!--▼ お名前 ▼-->
+                    <div class="c-form__item ">
+                        <div class="c-form__title">お名前<span class="c-form__required">必 須</span></div>
+                        <div class="c-form__inputarea">
+                            <div class="c-form-input">
+                                <input type="text" name="contact[name]" id="name" value="" placeholder="例）山田　太郎"
+                                    required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <!--▲ お名前 ▲-->
+                    <!--▼ ふりがな ▼-->
+                    <div class="c-form__item ">
+                        <div class="c-form__title">ふりがな<span class="c-form__required">必 須</span></div>
+                        <div class="c-form__inputarea">
+                            <div class="c-form-input">
+                                <input type="text" name="contact[kana01]" id="kana01" value="" placeholder="例）やまだ　たろう"
+                                    required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <!--▲ ふりがな ▲-->
+                    <!--▼ ご住所 ▼-->
+                    <div class="c-form__item c-form__item--fxstart">
+                        <div class="c-form__title">
+                            ご住所
+                            <span class="c-form__required">必 須</span>
+                        </div>
+                        <div class="c-form__inputarea c-form__inputarea--block">
+                            <div class="c-form__inputarea__groupflex">
+                                <div class="c-form__inputarea__item">
+                                    <label>郵便番号</label>
+                                    <div class="c-form-input">
+                                        <input type="text" name="contact[postcode]" id="postcode" value=""
+                                            placeholder="ハイフン（-）不要" maxlength="7" class="c-postcode postal-code"
+                                            required="required">
+                                    </div>
+                                </div>
+                                <div class="c-form__inputarea__item">
+                                    <label>都道府県</label>
+                                    <div class="c-form-select">
+                                        <div class="c-form-select__select">
+                                            <select name="contact[prefectures]" id="prefectures" class="region">
+                                                <option value="">選択してください</option>
+                                                <option value="北海道">北海道</option>
+                                                <option value="青森県">青森県</option>
+                                                <option value="岩手県">岩手県</option>
+                                                <option value="宮城県">宮城県</option>
+                                                <option value="秋田県">秋田県</option>
+                                                <option value="山形県">山形県</option>
+                                                <option value="福島県">福島県</option>
+                                                <option value="茨城県">茨城県</option>
+                                                <option value="栃木県">栃木県</option>
+                                                <option value="群馬県">群馬県</option>
+                                                <option value="埼玉県">埼玉県</option>
+                                                <option value="千葉県">千葉県</option>
+                                                <option value="東京都">東京都</option>
+                                                <option value="神奈川県">神奈川県</option>
+                                                <option value="新潟県">新潟県</option>
+                                                <option value="富山県">富山県</option>
+                                                <option value="石川県">石川県</option>
+                                                <option value="福井県">福井県</option>
+                                                <option value="山梨県">山梨県</option>
+                                                <option value="長野県">長野県</option>
+                                                <option value="岐阜県">岐阜県</option>
+                                                <option value="静岡県">静岡県</option>
+                                                <option value="愛知県">愛知県</option>
+                                                <option value="三重県">三重県</option>
+                                                <option value="滋賀県">滋賀県</option>
+                                                <option value="京都府">京都府</option>
+                                                <option value="大阪府">大阪府</option>
+                                                <option value="兵庫県">兵庫県</option>
+                                                <option value="奈良県">奈良県</option>
+                                                <option value="和歌山県">和歌山県</option>
+                                                <option value="鳥取県">鳥取県</option>
+                                                <option value="島根県">島根県</option>
+                                                <option value="岡山県">岡山県</option>
+                                                <option value="広島県">広島県</option>
+                                                <option value="山口県">山口県</option>
+                                                <option value="徳島県">徳島県</option>
+                                                <option value="香川県">香川県</option>
+                                                <option value="愛媛県">愛媛県</option>
+                                                <option value="高知県">高知県</option>
+                                                <option value="福岡県">福岡県</option>
+                                                <option value="佐賀県">佐賀県</option>
+                                                <option value="長崎県">長崎県</option>
+                                                <option value="熊本県">熊本県</option>
+                                                <option value="大分県">大分県</option>
+                                                <option value="宮崎県">宮崎県</option>
+                                                <option value="鹿児島県">鹿児島県</option>
+                                                <option value="沖縄県">沖縄県</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-form__inputarea__item c-form__inputarea__item--full">
+                                <label>市区町村番地</label>
+                                <div class="c-form-input">
+                                    <input type="text" name="contact[address01]" id="address01" value=""
+                                        placeholder="例）東京都港区三田３丁目１−４" class="locality street-address extended-address"
+                                        required="required">
+                                </div>
+                            </div>
+                            <div class="c-form__inputarea__item c-form__inputarea__item--full">
+                                <label>建物など</label>
+                                <div class="c-form-input">
+                                    <input type="text" name="contact[address02]" id="address02" value=""
+                                        placeholder="例）Net.1 三田ビル 4 階">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--▲ ご住所 ▲-->
+                    <!--▼ 電話番号 ▼-->
+                    <div class="c-form__item">
+                        <div class="c-form__title">
+                            電話番号<span class="c-form__required">必 須</span>
+                        </div>
+                        <div class="c-form__inputarea c-form__inputarea--w240">
+                            <div class="c-form-input">
+                                <input type="text" name="contact[tel]" id="tel" value="" placeholder="例） 03-4405-6686"
+                                    required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <!--▲ 電話番号 ▲-->
+                    <!--▼ メールアドレス ▼-->
+                    <div class="c-form__item">
+                        <div class="c-form__title">
+                            メールアドレス
+                            <span class="c-form__required">必 須</span>
+                        </div>
+                        <div class="c-form__inputarea">
+                            <div class="c-form-input">
+                                <input type="email" name="contact[email]" id="email" value=""
+                                    placeholder="例） yamadataro@example.com" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <!--▲ メールアドレス ▲-->
+                    <!--▼ お問い合わせ項目（複数可） ▼-->
+                    <div class="c-form__item c-form__item--fxstart c-form__item--noboder">
+                        <div class="c-form__title c-form__title--fxstart16">お問い合わせ項目（複数可）</div>
+                        <div class="c-form__inputarea c-form__inputarea--checkbox2">
+                            <div class="inner">
+                                <label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact0" value="新築住宅"
+                                        class="chk_contact"><span class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">新築住宅</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact1"
+                                        value="建築・リフォームについて" class="chk_contact"><span
+                                        class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">建築・リフォームについて</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact2"
+                                        value="アフターメンテナンス" class="chk_contact"><span class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">アフターメンテナンス</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact3" value="建て替え"
+                                        class="chk_contact"><span class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">建て替え</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact4" value="資金のこと"
+                                        class="chk_contact"><span class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">資金のこと</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact5" value="その他"
+                                        class="chk_contact"><span class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">その他</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact6" value="土地"
+                                        class="chk_contact"><span class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">土地</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact7"
+                                        value="リフォーム/リノベーション" class="chk_contact"><span
+                                        class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">リフォーム/リノベーション</span>
+                                </label><label class="c-form-check c-form-check--checkbox2">
+                                    <input type="checkbox" name="contact[chk_contact][]" id="chk_contact8" value="業者の方"
+                                        class="chk_contact"><span class="c-form-check__icon"></span>
+                                    <span class="c-form-check__text">業者の方</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--▲ お問い合わせ項目（複数可） ▲-->
+                    <!--▼ お問い合わせ内容▼-->
+                    <div class="c-form__item c-form__item--fxstart  c-form__item1 c-form__item--noboder">
+                        <div class="c-form__title">お問い合わせ内容</div>
+                        <div class="c-form__inputarea">
+                            <div class="c-form-textarea">
+                                <textarea name="contact[comment]" id="comment" class="textarea" cols="50"
+                                    rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--▲ お問い合わせ内容▲-->
+                    <p class="c-linkpolicy c-txt__san14">
+                        当社の<a class="u-link1" href="#">個人情報保護方針</a>について、ご同意の上、確認画面へお進みください。
+                    </p>
+                    <div class="c-form-agreecheck">
+                        <label class="c-form-check c-form-check--checkbox">
+                            <input type="checkbox" name="contact[privacy][]" id="privacy0" value="同意する" class="privacy"
+                                required=""> <span class="c-form-check__icon"></span>
+                            <span class="c-form-check__text">同意する</span>
+                        </label>
+                    </div>
+                    <div class="c-btn__submit c-btn__submit--center">
+                        <button class="c-btn__submittxt" type="submit" name="submitConfirm">
+                            <span>確認画面に進む</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <%- include('_partials/breadcrumb', { breadcrumb: breadcrumb.contact }); -%> 
+    </main>
+    <!-- @@content -->

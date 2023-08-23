@@ -1,0 +1,17 @@
+<svg id="キャンセル" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #043b8e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="楕円形_3" data-name="楕円形 3" class="cls-1" cx="12" cy="12" r="12"/>
+  <path id="長方形_732" data-name="長方形 732" class="cls-2" d="M1147.61,3960.34l8.87,8.87-1.27,1.27-8.87-8.87Z" transform="translate(-1139 -3953)"/>
+  <path id="長方形_732_のコピー" data-name="長方形 732 のコピー" class="cls-2" d="M1146.34,3969.21l8.87-8.87,1.27,1.27-8.87,8.87Z" transform="translate(-1139 -3953)"/>
+</svg>

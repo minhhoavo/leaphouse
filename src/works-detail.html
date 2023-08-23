@@ -1,0 +1,64 @@
+<%- include('_layouts/layout', { title: 'Work detail page' }); -%>   
+<!-- @content -->
+<main class="work-detail">
+    <section class="work-detail__inner l-container">
+        <div class="work-detail__top">
+            <h2 class="work-detail__ttl c-ttl__san40">ライフスタイルに合わせて楽しめる。変幻自在の四角い家。</h2>
+        </div>
+        <div class="work-detail__content">
+            <div class="work-detail__left">
+                <div class="work-detail__image">
+                    <img class="work-detail__img" src="../assets/img/work/workdetail-img1.jpg" alt="オリジナルプランを見学しよう！モデルハウス内覧会">
+                </div>
+                <p class="work-detail__desc c-txt__san16">
+                    ムダをそぎ落とした規格デザイン住宅「ZERO-CUBE」と、その「ZERO-CUBE」を基準に、自分だけのコダワリを足していくオプショナルプラン「+FUN」をパッケージングしました。<br>
+                    1000万円からはじめる家づくり。楽しみながらプランする「ZERO-CUBE +FUN」という新しい家づくりの形がここにあります。<br><br>
+                    例えば、毎日でも着たい服、毎日でも食べたいものを想像してみましょう。<br>
+                    履き慣れてからだに馴染んだスキニーパンツ、ずっと買い足し続けている定番のブラウス、実家から送ってもらうお米、近所のベーカリーのバケット･･････<br>
+                    それはきっと、シンプルでいて、でも自分の好みに寄り添ってくれる、ちょっとだけ特別な存在だったりしますよね。<br><br>
+                    そんな“最高のちょうどいい”をギュッと凝縮してつくった家、それがこの『ZERO-CUBE』です。<br><br>
+                    見た目は“CUBE”の名の通り、箱のような四角いかたち。<br>
+                    シンプルなのにどこかモダンで、スタイリッシュな雰囲気が印象的じゃないですか。<br>
+                    この箱のどこに“最高のちょうどいい”があるのか、ちょっとフタを開けてのぞいちゃいましょう。<br>
+                </p>
+                <h2 class="c-ttlborder c-ttl__san32">シンプルだから、そのままでも、アレンジしても楽しい。</h2>
+                <div class="work-detail__imagegroup">
+                    <img class="work-detail__img" src="../assets/img/work/workdetail-img2.jpg" alt="ウッドデッキ×土間のある家">
+                    <img class="work-detail__img" src="../assets/img/work/workdetail-img3.jpg" alt="ウッドデッキ×土間のある家">
+                </div>
+                <p class="work-detail__desc c-txt__san16">
+                    実はこの『ZERO-CUBE』、特徴的なスタイルからファンも多いとか。<br>
+                    2010年の発売開始以来、『ZERO-CUBE』を楽しむ家族が日本全国に続々と増えているんです。<br><br>
+                    ちなみにこの箱型のフォルムは、単純にユニークさを狙ってるわけじゃありません。<br>
+                    快適性や安全性、家の大事な基本性能はしっかりキープして、徹底的にムダを削ぎ落として生まれたカタチです。<br><br>
+                    建物の凹凸が少ないから、室内だって広々シンプル。だからそのまま住んでも自分好みにアレンジしても 、楽しく、おしゃれに住むことができちゃいます。<br>
+                    そんな画期的な家づくりの仕組みやスタイルが評価され、2010年にはグッドデザイン賞を受賞しました。<br>
+                </p>
+                <div class="work-detail__image">
+                    <img class="work-detail__img" src="../assets/img/work/workdetail-img4.jpg" alt="ウッドデッキ×土間のある家">
+                </div>
+            </div>
+            <div class="work-detail__right">
+                <%- include('_partials/sidebar', {
+                    image: work.image, 
+                    logo: work.logo,
+                    text: work.text
+                }); -%>
+            </div>
+        </div>
+    </section>
+    <section class="work-detail__other">
+        <div class="work-detail__otherwrap l-container">
+            <h2 class="work-detail__otherttl c-ttl__san32">その他の施工事例</h2>
+            <ul class="c-list1 c-col3 ">
+                <% work.list && work.list.slice(0,3).forEach(work=> { %>
+                    <%- include('_partials/eventItem', {
+                        event: work, classNameItem: "c-item"
+                    }); -%>
+                <%})%>
+            </ul>
+            <a href="#" class="c-btn c-btn--all c-txt__ac16b">VIEW ALL</a>
+        </div>
+    </section>
+</main>
+<!-- @@content -->

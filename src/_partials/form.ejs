@@ -1,0 +1,75 @@
+<section class="c-form">
+    <div class="c-form__wrap l-container l-container--w1000">
+        <h2 class="c-form__ttl c-ttl__san32"><%- reserttl %></h2>
+        <p class="c-form__desc c-txt__san16">ご来店をご希望の際は、下記に必要事項を入力し、「確認画面に進む」ボタンを押してください。。<br>
+            事前にご予約をいただきますと、お客様のご要望に沿った最適な準備ができ、より多くのご提案が可能です。<br>
+            お急ぎの場合はお手数ですが、お電話でご予約ください。
+        </p>
+
+        <div class="c-form__content">
+            <form method="post" id="eventform" class="c-form__main">
+                <div class="c-form__wrap">
+                    <div class="c-form__inner">
+                        <div class="c-form__row">
+                            <div class="c-form__labelarea">
+                                <label for="bookingdate" class="c-form__label c-txt__san15">第 1 希望日</label><span class="c-form__note c-txt__san14">必 須</span>
+                            </div>
+                            <div class="c-form__inputarea">
+                                <div class="c-form__bookingdate">
+                                    <div class="c-form__select">
+                                        <input type="text" name="bookingdate" id="bookingdate1" value="" placeholder="希望日を選択" class="c-form__date c-form__input c-txt__san15"> 
+                                    </div>
+                                    <div class="c-form__icon"><img src="../assets/img/icon/calendar-icon.svg" alt="calendar"></div>                     
+                                </div>
+                                <div class="c-form__arrivaltime">
+                                    <div class="c-form__select">
+                                        <input type="text" name="arrivaltime" id="arrivaltime1" value="" placeholder="来場時間を選択" class=" c-form__time c-form__input c-txt__san15">                      
+                                    </div>
+                                    <div class="c-form__icon c-form__iconadd"><i class="fa-solid fa-circle-plus" style="font-size: 2.4rem; color: #043b8e;"></i></div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-form__row">
+                            <div class="c-form__labelarea">
+                                <label for="bookingdate" class="c-form__label c-txt__san15">第 2 希望日</label>
+                            </div>
+                            <div class="c-form__inputarea">
+                                <div class="c-form__bookingdate">
+                                    <div class="c-form__select">
+                                        <input type="text" name="bookingdate" id="bookingdate2" value="" placeholder="希望日を選択" class="c-form__date c-form__input c-txt__san15"> 
+                                    </div>
+                                    <div class="c-form__icon"><img src="../assets/img/icon/calendar-icon.svg" alt="calendar"></div>                     
+                                </div>
+                                <div class="c-form__arrivaltime">
+                                    <div class="c-form__select">
+                                        <input type="text" name="arrivaltime" id="arrivaltime2" value="" placeholder="来場時間を選択" class="c-form__time c-form__input c-txt__san15"> 
+                                    </div>
+                                    <div class="c-form__icon c-form__iconremove"><img src="../assets/img/icon/close-icon.svg" alt="close"></div>                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-form__row">
+                            <div class="c-form__labelarea">
+                                <label for="bookingdate" class="c-form__label c-txt__san15">第 3 希望日</label>
+                            </div>
+                            <div class="c-form__inputarea">
+                                <div class="c-form__bookingdate">
+                                    <div class="c-form__select">
+                                        <input type="text" name="bookingdate" id="bookingdate3" value="" placeholder="希望日を選択" class="c-form__date c-form__input c-txt__san15"> 
+                                    </div>
+                                    <div class="c-form__icon"><img src="../assets/img/icon/calendar-icon.svg" alt="calendar"></div>                     
+                                </div>
+                                <div class="c-form__arrivaltime">
+                                    <div class="c-form__select">
+                                        <input type="text" name="arrivaltime" id="arrivaltime3" value="" placeholder="来場時間を選択" class="c-form__time c-form__input c-txt__san15">  
+                                    </div>
+                                    <div class="c-form__icon c-form__iconremove"><img src="../assets/img/icon/close-icon.svg" alt="close"></div>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

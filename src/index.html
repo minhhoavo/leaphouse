@@ -1,0 +1,364 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
+
+  <!-- @content -->
+  <main class="top">
+    <section class="c-mainvisual">
+      <div class="c-mainvisual__inner swiper">
+        <div class="c-mainvisual__content swiper-wrapper">
+          <div class="c-mainvisual__item swiper-slide">
+            <picture>
+              <img src="./assets/img/index/mainvisual01.jpg" alt="mainvisual01">
+            </picture>
+          </div>
+          <div class="c-mainvisual__item swiper-slide">
+            <picture>
+              <img src="./assets/img/index/mainvisual02.jpg" alt="mainvisual02">
+            </picture>
+          </div>
+          <div class="c-mainvisual__item swiper-slide">
+            <picture>
+              <img src="./assets/img/index/mainvisual03.jpg" alt="mainvisual03">
+            </picture>
+          </div>
+          <div class="c-mainvisual__item swiper-slide">
+            <picture>
+              <img src="./assets/img/index/mainvisual04.jpg" alt="mainvisual04">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="c-scroll c-txt__ac12">
+        <p class="txt">Scroll</p>
+        <span class="line"></span>
+      </div>
+
+    </section>
+    <section class="c-top01">
+      <div class="l-container">
+        <div class="c-top01__body">
+          <div class="c-top01__content">
+            <h2 class="c-top01__ttl c-ttl__san50">ココロ躍るを暮らしに</h2>
+            <p class="c-top01__txt c-txt__san16">家は、もっとワクワクする場所であっていいー</p>
+            <p class="c-top01__txt c-txt__san16">
+              あなたの“好き”や、みんなの“好き”があふれる家はきっと世界で一番「ココロ躍る」場所になる。ひとりでじっくり打ち込むことも、家族みんなで楽しむことも、こんなことやりたい、あったらいいな。</p>
+            <p class="c-top01__txt c-txt__san16">LEAPHOUSEは、あなたらしい家づくりを実現します。</p>
+          </div>
+          <div class="c-top01__image">
+            <picture>
+              <img src="./assets/img/index/top01__img01.jpg" alt="ココロ躍るを暮らしに">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c-top02">
+      <div class="c-top02__content l-container__w1006">
+        <div class="c-top02__groupedttl">
+          <h2 class="c-top02__ttl c-ttl__ac70">
+            ABOUT
+          </h2>
+          <h3 class="c-top02__subttl c-ttl__san20">私たちの家づくり</h3>
+        </div>
+        <p class="c-top02__txt c-txt__san16">
+          コストパフォーマンスに優れた安心・安全なLEAP HOUSE（リープハウス）の家づくりをご紹介します。
+        </p>
+      </div>
+      <ul class="c-top02__list">
+        <li class="c-top02__item">
+          <a href="#" class="c-top02__link">
+            <div class="c-top02__img">
+              <picture>
+                <img src="./assets/img/index/top02__img01.jpg" alt="私たちの強み">
+              </picture>
+            </div>
+            <div class="c-top02__info">
+              <h3 class="c-top02__itemttl c-ttl__ac32">POINT</h3>
+              <p class="c-top02__itemttl c-txt__san16">私たちの強み</p>
+            </div>
+          </a>
+        </li>
+        <li class="c-top02__item">
+          <a href="#" class="c-top02__link">
+            <div class="c-top02__img">
+              <picture>
+                <img src="./assets/img/index/top02__img02.jpg" alt="家づくりの流れ">
+              </picture>
+            </div>
+            <div class="c-top02__info">
+              <h3 class="c-top02__itemttl c-ttl__ac32">flow</h3>
+              <p class="c-top02__itemttl c-txt__san16">家づくりの流れ</p>
+            </div>
+          </a>
+        </li>
+        <li class="c-top02__item">
+          <a href="#" class="c-top02__link">
+            <div class="c-top02__img">
+              <picture>
+                <img src="./assets/img/index/top02__img03.jpg" alt="よくある質問">
+              </picture>
+            </div>
+            <div class="c-top02__info">
+              <h3 class="c-top02__itemttl c-ttl__ac32">Q & A</h3>
+              <p class="c-top02__itemttl c-txt__san16">よくある質問</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="c-top03">
+      <div class="l-container">
+        <div class="c-top03__content">
+          <div class="c-top03__box">
+            <div class="c-top03__boxcontent">
+              <h2 class="c-top03__ttl c-ttl__ac50">
+                <%= index.event.title %>
+              </h2>
+              <p class="c-top03__subttl c-txt__san20">
+                <%= index.event.subtitle %>
+              </p>
+            </div>
+            <div class="c-btnall01">
+              <a href="#" class="c-btnall01__link c-txt__ac16b">
+                <span>
+                  <%= button.view_all %>
+                </span>
+              </a>
+            </div>
+          </div>
+          <ul class="c-top03__list c-col1">
+            <% index.event.list && index.event.list.forEach(event=> {
+              %>
+              <%- include('_partials/eventItem', { event: event, classNameItem: "c-item" }); -%>
+                <%}) %>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="c-topworks">
+      <div class="l-container__w1006">
+        <div class="c-topworks__topcontent">
+          <div class="c-topworks__groupedttl">
+            <h2 class="c-topworks__ttl c-ttl__ac70">
+              <%= index.works.title %>
+            </h2>
+            <p class="c-topworks__txt c-ttl__san20">
+              <%= index.works.subtitle %>
+            </p>
+          </div>
+          <div class="c-btnall01">
+            <a href="#" class="c-btnall01__link c-txt__ac16b">
+              <span>
+                <%= button.view_all %>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="c-topworks__bottomcontent swiper">
+        <ul class="c-topworks__list c-col3 swiper-wrapper">
+          <% index.works.list && index.works.list.forEach(works=> { %>
+            <li class="c-list__item swiper-slide">
+              <a href="#" class="c-list__itemlink">
+                <div class="c-list__image">
+                  <picture>
+                    <img src="<%- works.image %>" alt="<%- works.title %>">
+                  </picture>
+                </div>
+                <div class="c-list__content">
+                  <p class="c-list__itemttl c-txt__san16"><%- works.title %></p>
+                </div>
+              </a>
+            </li>
+            <% })%>
+        </ul>
+        <div class="swiper-button-prev">
+          <picture>
+            <img src="./assets/img/index/arrow__btnwhite.png" alt="next arrow">
+          </picture>
+        </div>
+        <div class="swiper-button-next">
+          <picture>
+            <img src="./assets/img/index/arrow__btnwhite.png" alt="next arrow">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="c-topmodel">
+      <div class="l-container">
+        <div class="c-topmodel__top">
+          <h2 class="c-topmodel__ttl c-ttl__ac70">
+            <%= index.model_house.title%>
+          </h2>
+          <p class="c-topmodel__subttl c-txt__san20">
+            <%= index.model_house.subtitle%>
+          </p>
+          <p class="c-topmodel__txt c-txt__san16">
+            <%= index.model_house.text%>
+          </p>
+        </div>
+        <div class="c-topmodel__bottom">
+          <ul class="c-listimages">
+            <% index.model_house.list_images && index.model_house.list_images.forEach(model_house=> { %>
+              <li class="c-itemimage">
+                <picture>
+                  <img src="<%- model_house.image%>" alt="<%= index.model_house.title%>">
+                </picture>
+              </li>
+              <% })%>
+          </ul>
+          <div class="c-btnall02">
+            <a href="#" class="c-btnall02__link c-txt__ac16b">
+              <span>
+                <%= button.view_more %>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c-toplineup">
+      <div class="c-toplineup__groupedttl">
+        <h2 class="c-toplineup__ttl c-ttl__ac70">
+          <%= index.lineup.title%>
+        </h2>
+        <p class="c-toplineup__txt c-txt__san20">
+          <%= index.lineup.subtitle%>
+        </p>
+      </div>
+      <div class="c-toplineup__body swiper">
+        <ul class="c-list swiper-wrapper">
+          <% index.lineup.list && index.lineup.list.forEach(lineup=> {%>
+            <li class="c-item swiper-slide">
+              <a href="#">
+                <div class="c-item__img">
+                  <img src="<%- lineup.image_01%>" alt="<%- lineup.des%>">
+                </div>
+                <div class="c-item__info">
+                  <div class="c-item__icon">
+                    <img src="<%- lineup.icon_01%>" alt="<%- lineup.des%>">
+                  </div>
+                  <div class="c-item__content">
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="<%- lineup.logo_01_sp%>">
+                      <img class="c-item__logo" src="<%- lineup.logo_01%>" alt="<%- lineup.des%>">
+                    </picture>
+
+                    <p class="c-item__des c-txt__san16b">
+                      <%- lineup.des%>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <%}) %>
+        </ul>
+        <div class="swiper-button-prev">
+          <picture>
+            <img src="./assets/img/index/arrow__btnwhite.png" alt="next arrow">
+          </picture>
+        </div>
+        <div class="swiper-button-next">
+          <picture>
+            <img src="./assets/img/index/arrow__btnwhite.png" alt="next arrow">
+          </picture>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="c-btnall03">
+        <a href="#" class="c-btnall03__link c-txt__ac16b">
+          <span>
+            <%= button.view_more %>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="c-toplibrary">
+      <div class="c-toplibrary__groupedttl">
+        <h2 class="c-toplibrary__ttl c-ttl__ac70">
+          <%= index.library.title%>
+        </h2>
+        <p class="c-toplibrary__txt c-txt__san20">
+          <%= index.library.subtitle%>
+        </p>
+      </div>
+      <p class="c-toplibrary__des c-txt__san16"><%- index.library.des%></p>
+      <div class="c-btnall01">
+        <a href="#" class="c-btnall01__link c-txt__ac16b">
+          <span>
+            <%= button.view_all %>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="c-topestatevoice">
+      <div class="l-container__w1000">
+        <ul class="c-list">
+          <% index.estatevoice.list && index.estatevoice.list.forEach(estatevoice=> { %>
+            <li class="c-itemimage">
+              <a href="#" class="c-itemimage__link">
+                <picture>
+                  <img src="<%- estatevoice.image%>" alt="<%= index.estatevoice.title%>">
+                </picture>
+                <div class="c-estatevoice__groupedttl">
+                  <h2 class="c-estatevoice__ttl c-ttl__ac32">
+                    <%= estatevoice.title%>
+                  </h2>
+                  <p class="c-estatevoice__txt c-txt__san16">
+                    <%= estatevoice.subtitle%>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <% })%>
+        </ul>
+      </div>
+    </section>
+    <section class="c-topcolumn">
+      <div class="l-container__w1000">
+        <div class="c-topcolumn__top">
+          <div class="c-toplibrary__groupedttl">
+            <h2 class="c-toplibrary__ttl c-ttl__ac50">
+              <%= index.column.title%>
+            </h2>
+            <p class="c-toplibrary__txt c-txt__san20">
+              <%= index.column.subtitle%>
+            </p>
+          </div>
+          <div class="c-btnall01">
+            <a href="#" class="c-btnall01__link c-txt__ac16b">
+              <span>
+                <%= button.view_all %>
+              </span>
+            </a>
+          </div>
+        </div>
+          <div class="c-topcolumn__bottom">
+            <ul class="c-list">
+              <% index.column.list && index.column.list.forEach(column=> { %>
+                <li class="c-item">
+                  <a href="#" class="c-item__link">
+                    <p class="c-item__day c-txt__ac16">
+                      <%- column.day%>
+                    </p>
+                    <% if (column.status) { %>
+                      <p class="c-item__status c-txt__san14b">
+                        <%= column.status %>
+                      </p>
+                      <% } %>
+                        <p class="c-item__des c-txt__san16">
+                          <%- column.des %>
+                        </p>
+                  </a>
+                </li>
+                <% })%>
+            </ul>
+          </div>
+        
+      </div>
+    </section>
+  </main>
+  <!-- @@content -->

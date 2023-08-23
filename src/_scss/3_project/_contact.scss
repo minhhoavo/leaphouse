@@ -1,0 +1,45 @@
+.contact {
+    .c-contact__header {
+        text-align: center;
+        padding-top: 109px;
+        padding-bottom: 43px;
+
+
+    }
+
+    .c-contact__title {
+        color: $color--043b8e;
+        padding-bottom: 10px;
+
+    }
+
+    .c-contact__subtitle {
+        color: $color--043b8e;
+        letter-spacing: 0.1em;
+        padding-bottom: 35px;
+    }
+
+    .c-contact__des {
+        color: $color--15171b;
+        line-height: 1.875;
+    }
+
+    .c-form__item {
+        &.c-form__item--fxstart {
+            .c-form__title {
+                margin-top: 19px;
+            }
+
+            .c-form__title--fxstart16 {
+                margin-top: 16px;
+            }    
+        }
+            
+    }
+
+    .c-form__inputarea--block {
+        .c-form__inputarea__item--full {
+            padding-top: 31px;
+        }
+    }
+}

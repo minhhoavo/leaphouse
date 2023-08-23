@@ -1,0 +1,96 @@
+.c-infor {
+    background: $color--f1f3f8;
+    padding: 0;
+}
+
+.c-infor__inner {
+    display: flex;
+    padding-bottom: 74px;
+
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.c-infor__left {
+    width: 100%;
+    max-width: 550px;
+    padding-right: 100px;
+    flex-shrink: 0;
+    text-align: center;
+    margin: -51px 0 0;
+
+    @include tab {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.c-infor__right {
+    width: 100%;
+    max-width: 610px;
+    padding: 65px 0 0;
+
+    @include tab {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.c-infor__ttl1 {
+    color: $color--043b8e;
+}
+
+.c-infor__ttl2 {
+    color: $color--043b8e;
+}
+
+.c-infor__image {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 29px;
+
+    @include tab {
+        max-width: 100%;
+    }
+}
+
+.c-infor__table {
+    @include tab {
+        display: table;
+        margin: 0 auto;
+    }
+}
+
+.c-infor__num {
+    color: $color--043b8e;
+    line-height: 1;
+    margin: 2px 0 11px;
+    letter-spacing: 0.05em;
+}   
+
+.c-infor__row {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.c-infor__txtleft {
+    width: 93px;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 17px;
+
+    &::before {
+        content: "｜";
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.c-infor__ttl2 {
+    margin: 37px 0 15px;
+}

@@ -1,0 +1,229 @@
+<%- include('_layouts/layout', { title: 'Real estate detail page' }); -%>   
+<!-- @content -->
+<main class="estate-detail">
+    <section class="estate-detail__inner l-container l-container--w1000">
+        <div class="estate-detail__top">
+            <span class="c-list2__status c-txt__san15">販売中</span>
+            <h2 class="estate-detail__ttl c-ttl__san40">【住宅用地】西尾市矢曽根町籾山分譲地</h2>
+        </div>
+        <section class="estate-detail__content">             
+           <div class="estate-detail__label"><a href="#" class="estate-detail__labeltxt c-txt__san16b">物件を問い合わせる</a></div>
+           <div class="estate-detail__slider">
+                <div class="estate-detail__slides swiper mySwiper2">
+                    <div class="estate-detail__slideswrap swiper-wrapper">
+                        <% estate.slides && estate.slides.forEach(slide=> { %>
+                        <div class="estate-detail__slide swiper-slide">
+                            <img src="<%- slide.image %>" alt="【住宅用地】西尾市矢曽根町籾山分譲地"/>
+                        </div>
+                        <%})%>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div thumbsSlider="" class="estate-detail__myslide swiper mySwiper">
+                    <div class="estate-detail__slideswrap swiper-wrapper">
+                        <% estate.slides && estate.slides.forEach(slide=> { %>
+                            <div class="estate-detail__library swiper-slide">
+                                <img src="<%- slide.image %>" alt="【住宅用地】西尾市矢曽根町籾山分譲地"/>
+                            </div>
+                        <%})%>
+                    </div>
+                </div>
+            </div>
+            <div class="estate-detail__overview">
+                <div class="estate-detail__overleft c-txt__san16">
+                    一戸建ての多いエリア、静かで落ち着いた雰囲気。<br>
+                    小学校まで徒歩4分（約250ｍ）、中学校まで徒歩10分（約750ｍ）。<br>
+                    南道路と十分な奥行きを生かし、プライベート性の高い間取りをご提案します。<br>
+                    南向き日当たり良好！市街地で、いろんな店舗が近くにあり、生活が非常に便利な立地です。
+                </div>
+                <div class="estate-detail__overright">
+                    <p class="c-list2__price c-txt__san16">価格 <span class="c-list2__pricenum c-txt__lato20b ">1,400 ~ 2,000</span> 万円（税込）</p>
+                    <p class="c-list2__location c-txt__san16"><span class="c-list2__label">場所：</span>西尾市矢曽根町籾山</p>
+                    <p class="c-list2__area c-txt__san16"><span class="c-list2__label">面積：</span>131.54（39.79坪）〜146.14m²（44.20坪）</p>
+                </div>
+            </div>
+            <div class="estate-detail__infor">
+                <h2 class="c-ttlborder c-ttl__san20">区画別詳細情報</h2>
+                <div class="estate-detail__table c-txt__san16">
+                    <div class="estate-detail__row">
+                        <p class="estate-detail__col">売却状況</p>
+                        <p class="estate-detail__col">販売区間</p>
+                        <p class="estate-detail__col">面積</p>
+                        <p class="estate-detail__col">坪数</p>
+                        <p class="estate-detail__col">販売価格</p>
+                        <p class="estate-detail__col">坪単価</p>
+                    </div>
+                    <div class="estate-detail__row">
+                        <p class="estate-detail__col">売却済</p>
+                        <p class="estate-detail__col">A区画</p>
+                        <p class="estate-detail__col">146.14㎡</p>
+                        <p class="estate-detail__col">44.20坪</p>
+                        <p class="estate-detail__col">2,000万円</p>
+                        <p class="estate-detail__col">8.00万円</p>
+                    </div>
+                    <div class="estate-detail__row">
+                        <p class="estate-detail__col">商談中</p>
+                        <p class="estate-detail__col">B区画</p>
+                        <p class="estate-detail__col">131.54㎡</p>
+                        <p class="estate-detail__col">39.79坪</p>
+                        <p class="estate-detail__col">1,400万円</p>
+                        <p class="estate-detail__col">7.50万円</p>
+                    </div>
+                </div>
+                <div class="estate-detail__inforimg"><img src="../assets/img/estate/estatedt-img1.jpg" alt="区画別詳細情報"/></div>
+            </div>
+            <div class="estate-detail__descfree">
+                <h2 class="c-ttlborder c-ttl__san20">自由記述</h2>
+                <div class="estate-detail__descimg"><img src="../assets/img/estate/estatedt-img2.jpg" alt="自由記述"/></div>
+                <p class="estate-detail__desctxt c-txt__san16">一戸建ての多いエリア、静かで落ち着いた雰囲気。<br>
+                    富山市立奥田小学校まで徒歩4分（約250ｍ）、富山市立奥田中学校まで徒歩10分（約750ｍ）。<br>
+                    南道路と十分な奥行きを生かし、プライベート性の高い間取りをご提案します。</p>
+            </div>
+            <section class="estate-detail__descwrap">
+                <div class="estate-detail__descfree">
+                    <h2 class="c-ttlborder c-ttl__san20">自由記述</h2>
+                    <div class="estate-detail__descinner">
+                        <div class="estate-detail__descimg"><img src="../assets/img/estate/estatedt-img3.jpg" alt="自由記述"/></div>
+                        <div class="estate-detail__desctxt">
+                            <ul class="estate-detail__descul c-txt__san16">
+                                <li class="estate-detail__descli">様々なニーズに対応可能な事業用意
+                                    <ul class="estate-detail__descul2">
+                                        <li class="estate-detail__descli">自宅兼事務所（店舗）</li>
+                                        <li class="estate-detail__descli">作業場兼事務所</li>
+                                        <li class="estate-detail__descli">駐車場用地</li>
+                                        <li class="estate-detail__descli">資材置場　など</li>
+                                    </ul>
+                                </li>
+                                <li class="estate-detail__descli">土地面積204.82m2（約61.95坪）</li>
+                                <li class="estate-detail__descli">東側道路幅員：約7.5m</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="estate-detail__descfree">
+                    <h2 class="c-ttlborder c-ttl__san20">自由記述</h2>
+                    <div class="estate-detail__descinner">
+                        <div class="estate-detail__descimg"><img src="../assets/img/estate/estatedt-img3.jpg" alt="自由記述"/></div>
+                        <div class="estate-detail__desctxt">
+                            <ul class="estate-detail__descul c-txt__san16">
+                                <li class="estate-detail__descli">様々なニーズに対応可能な事業用意
+                                    <ul class="estate-detail__descul2">
+                                        <li class="estate-detail__descli">自宅兼事務所（店舗）</li>
+                                        <li class="estate-detail__descli">作業場兼事務所</li>
+                                        <li class="estate-detail__descli">駐車場用地</li>
+                                        <li class="estate-detail__descli">資材置場　など</li>
+                                    </ul>
+                                </li>
+                                <li class="estate-detail__descli">土地面積204.82m2（約61.95坪）</li>
+                                <li class="estate-detail__descli">東側道路幅員：約7.5m</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="estate-detail__descfree">
+                <h2 class="c-ttlborder c-ttl__san20">自由記述</h2>
+                <ul class="c-list3 c-col3 ">
+                    <% estate.descfree && estate.descfree.forEach(estate=> { %>
+                        <li class="c-list3__item">
+                            <a href="#" class="c-list3__itemlink">
+                                <div class="c-list3__image">
+                                    <img class="c-list3__img" src="<%- estate.image %>" alt="<%- estate.title %>">
+                                </div>
+                                <div class="c-list3__content">
+                                    <h2 class="c-list3__ttl c-ttl__san16b"><%- estate.title %></h2>
+                                    <p class="c-list3__desc c-txt__san16"><%- estate.desc %></p>
+                                </div>
+                            </a>
+                        </li>
+                    <%})%>
+                </ul>
+            </div>
+            <div class="estate-detail__descfree estate-detail__descfree--image">
+                <h2 class="c-ttlborder c-ttl__san20">自由記述</h2>
+                <ul class="c-list4 c-col4 ">
+                    <% estate.descimage && estate.descimage.forEach(estate=> { %>
+                        <li class="c-list4__item">
+                            <a href="#" class="c-list4__itemlink">
+                                <div class="c-list4__image">
+                                    <img class="c-list4__img" src="<%- estate.image %>" alt="<%- estate.title %>">
+                                </div>
+                            </a>
+                        </li>
+                    <%})%>
+                    <p class="c-list4__desc c-txt__san16">このエリアは、主に第1種低層住居専用地域と第1種中高層住居専用地域に指定されており、戸建やマンションなどが立ち並んでいます。六甲の山裾斜面に住宅が広がり、○○通という町名が東西方向に伸びて層をなしているため、通り名（町名）で坂の上か下かが分かるようになっています。</p>
+                </ul>
+            </div>
+            <div class="estate-detail__descfree estate-detail__descfree--video">
+                <h2 class="c-ttlborder c-ttl__san20">自由記述</h2>
+                <div class="estate-detail__descvideo"><img src="../assets/img/estate/estatedt-video.jpg" alt="自由記述"/></div>
+                <p class="estate-detail__desctxt c-txt__san16">一戸建ての多いエリア、静かで落ち着いた雰囲気。<br>
+                    富山市立奥田小学校まで徒歩4分（約250ｍ）、富山市立奥田中学校まで徒歩10分（約750ｍ）。<br>
+                    南道路と十分な奥行きを生かし、プライベート性の高い間取りをご提案します。
+                </p>
+            </div>
+            <div class="estate-detail__descfree estate-detail__descfree--library">
+                <h2 class="c-ttlborder c-ttl__san20">自由記述</h2>
+                <ul class="c-list4 c-col4 ">
+                    <% estate.desclibrary && estate.desclibrary.forEach(estate=> { %>
+                        <li class="c-list4__item">
+                            <a href="#" class="c-list4__itemlink">
+                                <div class="c-list4__image">
+                                    <img class="c-list4__img" src="<%- estate.image %>" alt="自由記述">
+                                </div>
+                            </a>
+                        </li>
+                    <%})%>
+                </ul>
+            </div>
+        </section>  
+    </section>  
+    <section class="estate-detail__access">
+        <div class="estate-detail__accessinner l-container l-container--w1000">
+            <h2 class="estate-detail__accessttl c-ttl__san32">アクセス</h2>
+            <div class="estate-detail__accessmaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.994960889284!2d137.0099879119423!3d35.03185596525826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60049d6586c160df%3A0x1f0cd55b104ed7f9!2sAT%20Home!5e0!3m2!1svi!2s!4v1692342478168!5m2!1svi!2s" width="600" height="478" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="estate-detail__accessnote c-txt__san16">西尾市矢曽根町籾山5丁目1</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="estate-detail__property l-container__w1040">
+        <h2 class="estate-detail__propertyttl c-ttl__san32">物件詳細情報</h2>
+        <div class="estate-detail__propertytb c-txt__san16">
+            <% estate.descproperty && estate.descproperty.forEach(descproperty=> { %>
+            <div class="estate-detail__propertycol"> 
+                <% descproperty.descproperty_list && descproperty.descproperty_list.forEach(list=> { %>
+                <div class="estate-detail__propertyrow">
+                    <p class="estate-detail_propertydt"><%- list.dt %></p>
+                    <p class="estate-detail_propertydd"><%- list.dd %></p>
+                </div>
+                <%})%>
+            </div>
+            <%})%>
+        </div>
+        <div class="c-btnall03 c-btnall03--red">
+            <a href="#" class="c-btnall03__link c-txt__ac16b">
+              <span>
+                物件を問い合わせる
+              </span>
+            </a>
+        </div>
+        <div class="estate-detail__notice">
+            <div class="estate-detail__notileft">
+                <p class="estate-detail__notitxt c-txt__san20">特記事項</p>
+            </div>
+            <div class="estate-detail__notiright">
+                <ul class="estate-detail__notitxt c-txt__san14">
+                    <li class="estate-detail__notilist">不動産物件情報は最新のデータの掲載を心がけていますが、データの書き換えの都合上、売却済みなどの場合はご容赦ください。</li>
+                    <li class="estate-detail__notilist">掲載されている不動産物件データが現況と異なる場合は現況を優先します。</li>
+                    <li class="estate-detail__notilist">建築条件付きの土地につきましては、土地売買契約締結後3カ月以内に当社の指定する建設業者と請負契約が成立しない場合には、　土地売買契約は解除され、受領した金額は全額無利息でお返しします。</li> 
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</main>
+<!-- @@content -->

@@ -1,0 +1,22 @@
+.c-library__list {
+    display: flex;
+}
+
+.c-library__one {
+    margin-bottom: 40px;
+}
+
+.c-library__column {
+    width: calc((100% - 40px) / 2);
+
+    &:first-child {
+        margin-right: 40px;
+    }
+
+    .c-library__img {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}
+

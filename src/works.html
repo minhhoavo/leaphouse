@@ -1,0 +1,21 @@
+<%- include('_layouts/layout', { title: 'work page' }); -%>
+    
+    <!-- @content -->
+    <main class="work">
+        <%- include('_partials/pagetitle', {
+            title: work.title, subtitle: work.subtitle
+        }); -%>
+        <section class="work-main l-container">
+            <div class="work-main__content">
+                <ul class="c-list1 c-col3 ">
+                    <% work.list && work.list.forEach(work=> { %>
+                        <%- include('_partials/eventItem', {
+                            event: work, classNameItem: "c-item"
+                        }); -%>
+                    <%})%>
+                </ul>
+            </div>
+            <%- include('_partials/pagination'); -%>
+        </section>
+    </main>
+    <!-- @@content -->

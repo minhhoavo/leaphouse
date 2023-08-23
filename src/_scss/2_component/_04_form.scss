@@ -1,0 +1,332 @@
+/*------------------------------------------------------------
+form
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-contact__form {
+    font-family: $san-font;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    .c-form__item {
+        display: flex;
+        align-items: center;
+        padding: 50px 0;
+        border-bottom: 1px solid rgb(222, 222, 222);
+
+        &.c-form__item--fxstart {
+            align-items: flex-start;
+        }
+
+        &.c-form__item1 {
+            padding-top: 0;
+        }
+
+        &.c-form__item--noboder {
+            border-bottom: 0;
+        }
+    }
+    
+    .c-form__title {
+        font-family: $san-font;
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: rgb(21, 23, 27);
+        width: 270px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .c-form__required {
+        font-family: $san-font;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1;
+        color: $color--fff;
+        width: 50px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #dc3175;
+
+
+    }
+
+    .c-form__inputarea {
+        flex: 1;
+
+    }
+    
+    .c-form__inputarea__item {
+        display: flex;
+        align-items: center;
+    }
+
+    .c-form__inputarea__item {
+        label {
+            font-family: $san-font;
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: rgb(21, 23, 27);
+            flex-shrink: 0;
+            margin-right: 15px;
+            max-width: 64px;
+        }
+    }
+
+    .c-form__inputarea__groupflex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-form__inputarea__groupflex {
+        .c-form__inputarea__item {
+            width: calc(50% - 30px);
+        }
+    }
+
+    .c-form__inputarea--block {
+        .c-form__inputarea__item--full {
+            width: 100%;
+        }
+    }
+
+    .c-form-select {
+        width: 100%;
+
+        select {
+            width: 100%;
+            font-family: $san-font;
+            font-size: 1.6rem;
+            height: 60px;
+            padding: 0 30px 0 20px;
+            background: #f1f3f8;
+            border: 0;
+        }
+
+        .c-form-select__select {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 9px;
+                width: 11px;
+                transform: translateY(-50%);
+                right: 9px;
+                top: 51%;
+                background: url(../../assets/img/icon/arrow-dropdown-black.svg) center/cover no-repeat;
+                pointer-events: none;
+            }
+        }
+    }
+
+
+    .c-form-input {
+        width: 100%;
+
+        input {
+            font-family: $san-font;
+            font-size: 1.6rem;
+            background: rgb(241, 243, 248);
+            padding: 20px;
+            border: none;
+            width: 100%;
+            height: 60px;
+        }
+    }
+
+    .inner {
+        padding: 34px 43px 23px 30px;
+        justify-content: space-between;
+        background: #f1f3f8;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+
+    }
+
+    .c-form-check {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+
+        &:first-child {
+            margin-right: 15px;
+        }
+    }
+
+    .c-form-check input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .c-form-check input:checked ~ .c-form-check__icon::after {
+        opacity: 1;
+    }
+
+    .c-form-check--checkbox2 input:checked ~ .c-form-check__icon::after {
+        width: 4px;
+        height: 6px;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+    }
+
+    .c-form-check--checkbox2 input:checked ~ .c-form-check__icon {
+        background: $color--043b8e;
+        border: none;
+        padding: 0 0 2px;
+    }
+
+    .c-form-check__icon {
+        height: 20px;
+        width: 20px;
+        box-sizing: border-box;
+        border: 1px solid rgb(102, 102, 102);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: "";
+            opacity: 0;
+            height: 12px;
+            width: 12px;
+            display: block;
+            background: $color--043b8e;
+        }
+    }
+
+    .c-form-check--checkbox2 {
+        .c-form-check__icon {
+            width: 14px;
+            height: 14px;
+            border-color: rgb(215, 219, 227);
+            background: #fff;
+        }
+    }
+
+    .c-form-check__text {
+        font-size: 1.5rem;
+        padding-left: 6px;
+    }
+
+    .c-form-textarea {
+        width: 100%;
+
+        textarea {
+            resize: none;
+            background: #f1f3f8;
+            height: 300px;
+            border: 0;
+            overflow: hidden;
+            width: 100%;
+            padding: 20px;
+            font-size: 1.6rem;
+        }
+    } 
+
+    .c-linkpolicy {
+        text-align: center;
+        color: $color--15171b;
+        margin-top: 11px;
+    }
+
+    .u-link1 {
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: $color--15171b;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s ease-in-out;
+        }
+    }
+
+    .c-form-agreecheck {
+        display: flex;
+        justify-content: center;
+        margin-top: 33px;
+        margin-bottom: 37px;
+        
+        .c-form-check {
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+
+        .c-form-check__text {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-btn__submit {
+        max-width: 270px;
+        width: 100%;
+        height: 60px;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s all ease;
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        &.c-btn__submit--center {
+            margin: 0 auto;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 21px;
+                height: 18px;
+                right: 17px;
+                top: 50%;
+                transform: translateY(-50%);
+                transform: translateY(-50%);
+                background: url(../../assets/img/index/arrow__btnwhite.png) center/cover no-repeat;
+                transition: 0.3s all ease;
+                transition: 0.3s all ease;
+            }
+        }
+
+        .c-btn__submittxt {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 1.6rem;
+            font-weight: 700;
+            font-family: $san-font;
+            color: $color--fff;
+            border: 0;
+            background: #ff6c00;
+        }
+    }
+}
+
+input::placeholder {
+    font-family: $san-font;
+    font-size: 1.6rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+
+

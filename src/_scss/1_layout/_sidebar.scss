@@ -1,0 +1,70 @@
+/*------------------------------------------------------------
+sidebar
+------------------------------------------------------------*/
+.c-sidebar {
+}
+
+.c-sidebar__title {
+    background: $color--043b8e;
+    text-align: center;
+    color: $color--fff;
+    padding: 10px 0;
+}
+
+.c-sidebar__content {
+    background: $color--f1f3f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 28px;
+    margin-bottom: 9px;
+}
+
+.c-sidebar__image {
+    text-align: center;
+    margin: 30px 0 30px 31px;
+
+    .c-sidebar__img {
+        max-width: 225px;
+    }
+}
+
+.c-sidebar__logo {
+    margin: 0 0 9px;
+
+    .c-sidebar__img {
+        max-width: 217px;
+    }
+}
+
+.c-sidebar__txt {
+    margin-bottom: 28px;
+}
+
+.c-sidebar__model {
+    position: relative;
+
+    .c-sidebar__img {
+        width: 100%;
+    }
+
+    .c-sidebar__modelinfor {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .c-sidebar__modelcap {
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .c-sidebar__modelttl {
+        color: $color--fff;
+    }
+}

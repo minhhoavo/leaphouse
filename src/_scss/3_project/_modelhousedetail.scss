@@ -1,0 +1,87 @@
+.modelhouse-detail {
+    margin-top: 245px;
+
+    .c-form {
+        margin: 38px 0 50px;
+
+        .c-form__desc {
+            margin: 34px 0 14px;
+        }
+
+        .c-form__inputarea .c-form__input {
+            padding: 22px 20px;
+        }
+    }
+}
+
+.modelhouse-detail__top {
+    text-align: center;
+    padding: 0 0 30px;
+
+    .modelhouse-detail__ttl {
+        margin-bottom: 15px;
+    }
+}
+
+.modelhouse-detail__content {
+    display: flex;
+    margin: 68px 0 80px;
+
+    @include tab {
+        flex-direction: column;
+    }
+
+    .modelhouse-detail__desc {
+        margin: 41px 0 62px;
+    }
+
+    .c-ttlborder {
+        margin: 100px 0 50px;
+        padding-right: 10px;
+    }
+
+    .c-table {
+        .c-ttlborder {
+            margin: 100px 0 15px;
+        }
+    }
+}
+
+.modelhouse-detail__left {
+    padding: 0 49px 0 0;
+    width: 69.8%;
+
+    @include tab {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.modelhouse-detail__right {
+    width: 30.2%;
+
+    @include tab {
+        width: 100%;
+    }
+}
+
+.modelhouse-detail__desc {
+    line-height: 1.88;
+}
+
+.modelhouse-detail__tbinner {
+    margin: unset;
+    padding: 19px 40px 0 0;
+}
+
+.modelhouse-detail__inforinner {
+    text-align: center;
+    padding: 39px 0 45px;
+}
+
+.modelhouse-detail__infortxt {
+    line-height: 1.88;
+    padding: 14px 0 13px;
+}
+
+

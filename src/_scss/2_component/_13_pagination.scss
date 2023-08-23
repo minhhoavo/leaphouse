@@ -1,0 +1,75 @@
+.c-pagination {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 6px auto 0;
+}
+
+.c-pagination__number {
+    font-weight: 400;
+    display: block;
+    color: $color--aaa;
+    line-height: 1;
+    padding: 0 14px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+
+    &.current {
+        color: $color--043b8e;
+        font-weight: 700;
+    }
+}
+
+.c-pagination__link {
+    letter-spacing: 0.2em;
+    padding: 0 108px;
+    height: 100%;
+    background: $color--f1f3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+    color: $color--043b8e;
+
+    @include tab {
+        padding: 0 70px;
+    }
+
+    &.next {
+        position: absolute;
+        right: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url("../assets/img/icon/arrow-icon.svg") no-repeat;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+            right: 16px;
+            transform: rotate(180deg);
+            
+        }
+    }
+
+    &.prev {
+        position: absolute;
+        left: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url("../assets/img/icon/arrow-icon.svg") no-repeat;
+            background-size: 100%;
+            width: 20px;
+            height: 20px;
+            left: 16px;   
+        }
+    }
+}

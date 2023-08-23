@@ -1,0 +1,15 @@
+.estate-main {
+    margin: 44px auto 43px;
+
+    .estate-main__content {
+        margin-bottom: 23px;
+    }
+
+    .c-list2__item {
+        margin-bottom: 50px;
+
+        &:nth-child(3n) {
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,217 @@
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-btn {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    text-align: center;
+    border: 1px solid $color--ddd;
+    background: $color--fff;
+    color: $color--043b8e;
+    position: relative;
+    margin: 27px auto 29px;
+    padding: 18px 0;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        background: url("../assets/img/icon/arrow-icon.svg") no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        right: 17px;
+        transform: rotate(180deg);     
+    }
+
+    &--red {
+        margin: 0 auto;
+        background: $color--ff6c00;
+        border: none;
+        color: $color--fff;
+    }
+
+    &--all {
+        max-width: 160px;
+        text-align: right;
+        border: none;
+        border-bottom: 1px solid $color--043b8e;
+        padding: 18px 0 16px;
+        margin: 0 auto;
+
+        &::after {
+            top: 21px;
+            transform: rotate(0);
+            left: 0;
+            transition: 0.3s all ease;
+        }
+
+        &:hover::after {
+            left: -10px;
+        }
+    }
+}
+
+.c-btnall01 { 
+    max-width: 160px;
+    width: 100%;
+    color: $color--043b8e;
+    border-bottom: 1px solid $color--043b8e;
+
+    &--transform {
+        margin: 0 auto;
+
+        .c-btnall01__link {
+            text-align: right;
+
+            &::after {
+                left: 0;
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+    
+
+    .c-btnall01__link {
+        display: block;
+        width: 100%;
+        padding: 16px 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../../assets/img/icon/arrow-icon.svg) center/cover no-repeat;
+            transition: 0.3s all ease;
+        }
+    }
+
+    
+}
+
+.c-btnall02 { 
+    max-width: 200px;
+    width: 100%;
+    color: $color--043b8e;
+    background-color: $color--fff;
+    position: relative;
+
+    .c-btnall02__link {
+        display: block;
+        width: 100%;
+        padding: 18px 0;
+        text-align: center;
+    }
+
+    span {
+        position: relative;
+        padding-right: 43px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../../assets/img/icon/arrow-icon.svg) center/cover no-repeat;
+            transition: 0.3s all ease;
+        }
+    }
+    
+}
+
+.c-btnall03 { 
+    max-width: 270px;
+    width: 100%;
+    background-color: $color--043b8e;
+    color: $color--fff;
+    border: 1px solid $color--043b8e;
+    position: relative;
+
+    &--white {
+        border: 1px solid $color--ddd;
+        background: $color--fff;
+        color: $color--043b8e;
+
+        &:hover {
+            border: 1px solid $color--043b8e;
+            transition: 0.3s all ease;
+        }
+
+        .c-btnall03__link {
+            span {
+                &::after {
+                    background: url(../../assets/img/icon/arrow-icon.svg) center/cover no-repeat;
+                }
+            }
+        }
+    }
+
+    &--red {
+        border: 1px solid $color--ff6c00 !important;
+        background-color: $color--ff6c00;
+        border: none;
+        margin: 0 auto;
+
+        .c-btnall03__link {
+            display: block;
+            width: 100%;
+            padding: 18px 0 16px !important;
+        }
+
+        &:hover {
+            border: 1px solid $color--043b8e !important;
+            transition: 0.3s all ease;
+        }
+    }
+
+    .c-btnall03__link {
+        display: block;
+        width: 100%;
+        padding: 18px 0;
+        text-align: center;
+
+        &:hover {
+            opacity: 1;
+            background-color: $color--fff;
+            color: $color--043b8e;
+
+            span {
+                &::after {
+                    background: url(../../assets/img/icon/arrow-icon.svg) center/cover no-repeat;
+                }
+            }
+        }
+    }
+
+    span {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            right: 17px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../../assets/img/icon/arrowwhite-icon.svg) center/cover no-repeat;
+            transition: 0.3s all ease;
+        }
+    }   
+}
+
+.c-btnall04 {
+    .c-btnall04__img {
+        width: 21px;
+        height: 18px;
+    }
+}

@@ -1,0 +1,16 @@
+<svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="41.82" height="35.812" viewBox="0 0 20.91 17.906">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="長方形_1" data-name="長方形 1" class="cls-1" d="M1135.4,696.989l8.49,8.485-1.42,1.415-8.48-8.485Z" transform="translate(-1123 -697)"/>
+  <path id="長方形_1-2" data-name="長方形 1" class="cls-1" d="M1133.99,713.493l8.49-8.483,1.41,1.414-8.48,8.483Z" transform="translate(-1123 -697)"/>
+  <rect id="長方形_1-3" data-name="長方形 1" class="cls-2" y="8" width="20" height="2"/>
+</svg>

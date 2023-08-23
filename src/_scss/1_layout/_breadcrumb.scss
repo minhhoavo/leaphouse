@@ -1,0 +1,25 @@
+/* Breadcrumb
+------------------------------------------------------------*/
+.c-breadcrumb {
+    padding: 4px 0;
+
+    .c-breadcrumb__list {
+        display: flex;
+        align-items: center;
+        margin-left: -2px;
+        text-transform: uppercase;
+    }
+
+    .c-breadcrumb__item {
+        &:not(:first-of-type) {
+            &::before {
+                content: ">";
+                padding: 0 11px 0 15px;
+                position: relative;
+                top: -1px;
+            }
+        }
+    }
+
+}
+

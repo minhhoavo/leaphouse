@@ -1,0 +1,17 @@
+<div class="c-breadcrumb">
+    <div class="l-container">
+    <ul class="c-breadcrumb__list c-txt__ac13">
+        <% breadcrumb.list && breadcrumb.list.forEach(list => { %>
+        <li class="c-breadcrumb__item">
+            <% if (list.active) { %>
+            <span>
+                <%- list.title %>
+            </span>
+            <% } else { %>
+            <a href="<%- list.url %>"> <%- list.title %></a>
+            <% } %>
+        </li>
+        <% }) %>
+    </ul>
+    </div>
+</div>

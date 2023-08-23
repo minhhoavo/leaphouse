@@ -1,0 +1,100 @@
+.event-detail {
+    margin-top: 260px;
+}
+
+.event-detail__top {
+    padding: 0 0 28px;
+    border-bottom: 1px solid $color--c2c8d4;
+}
+
+.event-detail__content {
+    display: flex;
+    margin: 67px 0 90px;
+
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.event-detail__left {
+    padding: 0 50px 0 0;
+    width: 69.8%;
+
+    @include tab {
+        width: 100%;
+        padding: 0;
+    }
+
+    .event-detail__image {
+        margin: 3px 0 43px;
+    }
+}
+
+.event-detail__right {
+    width: 30.2%;
+
+    @include tab {
+        width: 100%;
+    }
+}
+
+.event-detail__cat {
+    .c-list1__cat {
+        margin-right: 4px;
+    }
+}
+
+.event-detail__time {
+    color: $color--999;
+}
+
+.event-detail__ttl {
+    margin: 15px 0;
+}
+
+.event-detail__desc {
+    color: $color--15171b;
+    line-height: 1.88;
+    margin-bottom: 93px;
+}
+
+.event-detail__compareimg {
+    margin: 40px 0;
+}
+
+.event-detail__other {
+    .c-list1__ttl {
+        font-size: 1.6rem;
+        margin-bottom: 13px;
+    }
+
+    .c-list1 {
+        margin-bottom: 27px;
+    }
+
+    .c-list1__time {
+        color: $color--999;
+
+        &::before {
+            content: "開催日：";
+        }
+    }
+
+    .c-list1__item {
+        margin-bottom: 0;
+    }
+
+    .c-list1__image {
+        margin-bottom: 20px;
+    }
+    
+    .c-list1__box {
+        margin: 0 0 13px;
+    }  
+}
+
+.event-detail__otherttl {
+    text-align: center;
+    color: $color--15171b;
+    padding: 0 0 41px;
+}

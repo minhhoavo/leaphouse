@@ -1,0 +1,44 @@
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+
+.c-col3 {
+    .c-item {
+        width: calc((100% - 80px) / 3);
+        margin-right: 40px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+
+            @include tab {
+                margin-right: 40px;
+            }
+
+            @include sp {
+                margin-right: 0;
+            }
+        }
+
+        @include tab {
+            width: calc((100% - 40px) / 2);
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        @include sp {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+.c-ttlborder {
+    border-left: 6px solid $color--043b8e;
+    line-height: 1.12;
+    padding-left: 16px;
+}

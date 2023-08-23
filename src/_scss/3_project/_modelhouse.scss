@@ -1,0 +1,32 @@
+.modelhouse-main {
+    .c-list1__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0 20px;
+
+        .c-list1__contenttxt {
+            width: 80%;
+        }
+
+        .c-list1__ttl {
+            margin-bottom: 6px;
+        }
+
+        .c-list1__contentbtn {
+            width: 21%;
+        }
+    }
+
+    .c-btnall03__link {
+        padding: 12px 0;
+    }
+
+    .c-list1__item {
+        margin-bottom: 40px;
+    }
+}
+
+.modelhouse-main__content {
+    margin: 44px 0 50px;
+}

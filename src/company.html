@@ -1,0 +1,43 @@
+<%- include('_layouts/layout', { title: 'Company Page' }); -%>
+    <!-- @meta -->
+    <meta name="description" content="Company page">
+    <!-- @@meta -->
+
+    <!-- @content -->
+    <main class="company">
+        <%- include('_partials/pagetitle', { title: company.title, subtitle: company.subtitle }); -%>
+            <div class="l-container">
+                <div class="c-conpany__body">
+                    <% company.company_list && company.company_list.forEach(function(company_list,index) { %>
+                        <h3 class="c-companylist__title c-ttl__san32"><%- company_list.title%></h3>
+                        <dl class="c-companylist__list index--<%-index%>">
+                            <% company_list.list_item && company_list.list_item.forEach(list_item=> { %>
+                                <div class="c-companylist__item c-txt__san16">
+                                    <dt class="c-company__dt"><%-list_item.name%></dt>
+                                    <% if (list_item.id === "email") { %>
+                                        <dd class="c-company__dd">
+                                            <a href="mailto:<%- list_item.email%>"><%- list_item.text%></a>
+                                        </dd>
+                                    <%} else if (list_item.id === "tel") { %>
+                                        <dd class="c-company__dd">
+                                            <a class="c-company__tel" href="tel:<%- list_item.tel%>"><%- list_item.tel_text%><%- list_item.tel%></a>
+                                        <%- list_item.fax_text%>
+                                        </dd>
+                                    <%} else{ %>
+                                        <dd class="c-company__dd"><%- list_item.text%></dd>
+                                    <% } %>
+                                    
+                                </div>
+                                
+                                <% })%>
+                        </dl>
+                        <div class="c-company__map">
+                            <%-company_list.iframe%>
+                        </div>
+                        <% })%>
+                </div>
+
+            </div>
+            <%- include('_partials/breadcrumb', { breadcrumb: breadcrumb.company }); -%>        
+    </main>
+    <!-- @@content -->

@@ -1,0 +1,35 @@
+<%- include('_layouts/layout', { title: 'Real estate page' }); -%>
+    
+    <!-- @content -->
+    <main class="estate">
+        <%- include('_partials/pagetitle', {
+            title: estate.title, subtitle: estate.subtitle
+        }); -%>
+        <section class="estate-main l-container">
+            <div class="estate-main__content">
+                <ul class="c-list2 c-col3 ">
+                    <% estate.list && estate.list.forEach(estate=> { %>
+                        <li class="c-list2__item c-item">
+                            <a href="<%- estate.linkdetail %>" class="c-list2__itemlink">
+                                <div class="c-list2__image <% if (estate.status === '完売') {%>is-disable<% } %>">
+                                    <img class="c-list2__img" src="<%- estate.image %>" alt="<%- estate.title %>">
+                                    <span class="c-list2__status c-txt__san15 <% if (estate.status === '完売') {%> is-soldout<% } %>"><%- estate.status %></span>
+                                </div>
+                                <div class="c-list2__content">
+                                    <h2 class="c-list2__ttl c-ttl__san20"><%- estate.title %></h2>
+                                    <p class="c-list2__location c-txt__san16">場所：<%- estate.location %></p>
+                                    <p class="c-list2__area c-txt__san16">面積：<%- estate.area %></p>
+                                    <div class="c-list2__bottom">
+                                        <p class="c-list2__price c-txt__san16">価格 <span class="c-list2__pricenum c-txt__lato20b "><%- estate.price %></span>万円<% if (estate.price === '4,100') {%>（税込）<% } %></p>
+                                        <a class="c-btnall04" href="<%- estate.linkdetail %>"><img class="c-btnall04__img" src="../../assets/img/icon/arrow-icon.svg" alt="arrow"></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    <%})%>
+                </ul>
+            </div>
+            <%- include('_partials/pagination'); -%>
+        </section>
+    </main>
+    <!-- @@content -->

@@ -1,0 +1,28 @@
+<%- include('_layouts/layout', { title: 'Event page' }); -%>
+    
+    <!-- @content -->
+    <main class="event">
+        <%- include('_partials/pagetitle', {
+            title: event.title, subtitle: event.subtitle
+        }); -%>
+        <section class="event-main l-container">
+            <ul class="event-main__listcat">
+                <% event.tabs && event.tabs.forEach(tab=> { %>
+                    <li class="event-main__catitem <%- tab.status %>">
+                        <a class="event-main__catlink c-txt__san16" href="#"><%- tab.text %></a>
+                    </li>
+                <%})%>
+            </ul>
+            <div class="event-main__content">
+                <ul class="c-list1 c-col3 ">
+                    <% event.list && event.list.forEach(event=> { %>
+                        <%- include('_partials/eventItem', {
+                            event: event, classNameItem: "c-item"
+                        }); -%>
+                    <%})%>
+                </ul>
+            </div>
+            <%- include('_partials/pagination'); -%>
+        </section>
+    </main>
+    <!-- @@content -->

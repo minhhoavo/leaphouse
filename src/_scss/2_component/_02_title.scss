@@ -1,0 +1,128 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-ttl__san16 {
+    font-family: $san-font;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.c-ttl__san20 {
+    font-family: $san-font;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.c-ttl__san20b {
+    font-family: $san-font;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.c-ttl__san24 {
+    font-family: $san-font;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.c-ttl__san24m {
+    font-family: $san-font;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.c-ttl__san30 {
+    font-family: $san-font;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.c-ttl__san32 {
+    font-family: $san-font;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+.c-ttl__san32b {
+    font-family: $san-font;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.c-ttl__san40 {
+    font-size: $san-font;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.c-ttl__san40b {
+    font-size: $san-font;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.c-ttl__san50 {
+    font-family: $san-font;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.c-ttl__ac20 {
+    font-family: $san-font;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.c-ttl__ac28 {
+    font-family: $san-font;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.c-ttl__ac32 {
+    font-family: $acumin-font;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+.c-ttl__ac40 {
+    font-family: $acumin-font;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.c-ttl__ac50 {
+    font-family: $acumin-font;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.c-ttl__ac60b {
+    font-family: $acumin-font;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.c-ttl__ac70 {
+    font-family: $acumin-font;
+    font-size: 7rem;
+    font-weight: 400;
+}
+
+.c-pagetitle {
+    color: $color--043b8e;
+    text-align: center;
+
+    .c-pagetitle__ttl {
+        padding: 58px 0 0;
+    }
+
+    .c-pagetitle__caption {
+        display: block;
+        letter-spacing: 0.1em;
+        margin: 10px 0 0;
+    }
+}

@@ -1,0 +1,13 @@
+<li class="c-list1__item <%- classNameItem %>">
+    <a href="<%- event.linkdetail %>" class="c-list1__itemlink">
+        <div class="c-list1__image"><img class="c-list1__img" src="<%- event.image %>" alt="<%- event.title %>"></div>
+        <div class="c-list1__content">
+            <div class="c-list1__box">
+                <span class="c-list1__cat"><%- event.cat %></span>
+                <span class="c-list1__status <% if (event.status === '受付中') {%> is-accept<% } %>"><%- event.status %></span>
+            </div>
+            <h2 class="c-list1__ttl c-ttl__san20"><%- event.title %></h2>
+            <p class="c-list1__time c-txt__san16"><%- event.time %></p>
+        </div>
+    </a>
+</li>

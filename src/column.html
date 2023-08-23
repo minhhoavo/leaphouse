@@ -1,0 +1,108 @@
+<%- include('_layouts/layout', { title: 'Column Page' }); -%>
+    <!-- @meta -->
+    <meta name="description" content="Column page">
+    <!-- @@meta -->
+
+    <!-- @content -->
+    <main class="column">
+        <%- include('_partials/pagetitle', { title: column.title, subtitle: column.subtitle }); -%>
+        <section class="c-column">
+            <div class="l-container">
+                <div class="c-column__inner">
+                    <div class="l-container__column">
+                        <div class="c-column__content">
+                            <div class="c-column__contenttop">
+                                <h2 class="c-column__ttllist c-ttl__san30">
+                                    <%- column.title_list%>
+                                    <span class="c-column__count"><%- column.count%></span>
+                                </h2>
+                                <a class="c-column__buttonpost c-txt__san13" href="<%- column.button_post.url%>">
+                                    <span>
+                                        <%- column.button_post.txt%>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="c-column__contentbottom">
+                                <ul  class="c-column__list">
+                                    <% column.list && column.list.forEach(column_list=> { %>
+                                        <li class="c-column__item">
+                                            <a href="<%- column_list.url%>" class="c-column__link">
+                                                <div class="c-column__img">
+                                                    <img src="<%- column_list.image%>" alt="<%- column_list.title%>">
+                                                </div>
+                                                <div class="c-column__info">
+                                                    <p class="c-column__day c-txt__ac16"><%- column_list.day%></p>
+                                                    <h3 class="c-column__titleitem c-txt__san20">
+                                                        <%- column_list.title%>
+                                                        <% if (column_list.status) { %>
+                                                            <span class="c-column__status">
+                                                                <%- column_list.status%>
+                                                            </span>
+                                                        <% } %>
+                                                    </h3>
+                                                    <ul class="c-column-cat__list c-txt__san14">
+                                                        <% column_list.cat && column_list.cat.forEach(cat=> { %>
+                                                            <li class="c-column-cat__item">
+                                                                <%- cat.title%>
+                                                            </li>    
+                                                        <% })%>
+                                                        
+                                                    </ul>
+                                                    <p class="c-column__des c-txt__san16">
+                                                        <%- column_list.des%>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>    
+                                    <% })%>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-sidebar02">
+                        <% column.siderbar && column.siderbar.forEach(siderbar=> { %>
+                            <div class="c-sidebar02__item c-ttl__san16">
+                                <h3 class="c-sidebar02__title c-ttl__san16">
+                                    <%- siderbar.title%>
+                                </h3>
+                                <% if (siderbar.id ==="search") { %>
+                                    <div class="c-search">
+                                        <form class="c-search__form" action="#" method="get">
+                                            <input type="text" name="search" value="" required>
+                                            <button class="c-search__btn c-ttl__san16" type="submit"><%- siderbar.btn%></button>
+                                        </form>
+                                    </div>
+                                <% } %>  
+                                <ul class="c-sidebar02__menulist">
+                                    <% siderbar.menu && siderbar.menu.forEach(menu=> { %>
+                                        <li class="c-sidebar02__menuitem <% if (menu.menu_lv2) { %>c-siderbar02__dropdown<% } %>">
+                                            <a href="<%- menu.url%>">
+                                                <%- menu.menu_lv1%>
+                                                <% if (menu.menu_lv2) { %>
+                                                    <div class="list-icon"></div>
+                                                <% }%>
+                                            </a>
+                                            <% if (menu.menu_lv2) { %>
+                                                <ul>
+                                                    <% menu.menu_lv2 && menu.menu_lv2.forEach(menu_lv2=> { %>
+                                                        <li>
+                                                            <a href="<%- menu_lv2.url%>"><%- menu_lv2.text%>
+                                                                
+                                                            </a>
+                                                        </li>
+                                                    <% })%>
+                                                    
+                                                </ul>
+                                            <% } %>
+                                        </li>
+                                    <% })%>
+                                </ul>    
+                            </div>
+                        <% })%>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- @@content -->

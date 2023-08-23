@@ -1,0 +1,922 @@
+{
+  "button": {
+    "view_all": "VIEW ALL",
+    "view_more": "VIEW MORE"
+  },
+  "breadcrumb": {
+    "company": {
+      "list": [
+        {
+          "url": "./",
+          "title": "HOME"
+        },
+        {
+          "url": "./company.html",
+          "title": "COMPANY",
+          "active": true
+        }
+      ]
+    },
+    "contact": {
+      "list": [
+        {
+          "url": "./",
+          "title": "HOME"
+        },
+        {
+          "url": "./contact.html",
+          "title": "CONTACT",
+          "active": true
+        }
+      ]
+    }
+  },
+  "index": {
+    "event": {
+      "title": "EVENT",
+      "subtitle": "イベント情報",
+      "list": [
+        {
+          "image": "../assets/img/index/event01.jpg",
+          "cat": "見学会",
+          "status": "受付中",
+          "title": "期間限定公開！FREAK'S HOUSE モデルハウス見学会",
+          "time": "2022/08/27(土)〜 08/28(日)"
+        },
+        {
+          "image": "../assets/img/index/event02.jpg",
+          "cat": "相談会",
+          "status": "終了",
+          "title": "教えて！ゼロから始める家づくり相談会「建築費用まるわかり講座」",
+          "time": "2022/08/27(土)〜 08/28(日)"
+        },
+        {
+          "image": "../assets/img/index/event03.jpg",
+          "cat": "販売会",
+          "status": "満席",
+          "title": "1000万円（税別）～の家が棟数限定で登場！新商品販売会を開催します！",
+          "time": "2022/08/27(土)〜 08/28(日)"
+        }
+      ]
+    },
+    "works": {
+      "title": "WORKS",
+      "subtitle": "施工事例",
+      "list": [
+        {
+          "image": "./assets/img/index/works01.jpg",
+          "title": "趣味をシェアする、幸せな時間。大好きな車と、ガレージがある暮らし。"
+        },
+        {
+          "image": "./assets/img/index/works02.jpg",
+          "title": "ライフスタイルに合わせて楽しめる。変幻自在の四角い家。"
+        },
+        {
+          "image": "./assets/img/index/works03.jpg",
+          "title": "バルコニーでアウトドアを楽しむ。我が家のキャンプアイテム大集合！"
+        },
+        {
+          "image": "./assets/img/index/works04.jpg",
+          "title": "知多市 Y様邸"
+        }
+      ]
+    },
+    "model_house": {
+      "title": "MODEL HOUSE",
+      "subtitle": "モデルハウス",
+      "text": "モデルハウスを見にいこう。設計・デザイン・上質な空間・性能の良さ・自然素材の心地よさ間取りの広さ、価格など、ぜひ聞いて体感してみてください。",
+      "list_images": [
+        {
+          "image": "./assets/img/index/model01.jpg"
+        },
+        {
+          "image": "./assets/img/index/model02.jpg"
+        }
+      ]
+    },
+    "lineup": {
+      "title": "LINEUP",
+      "subtitle": "商品ラインナップ",
+      "list": [
+        {
+          "image_01": "./assets/img/index/line-up/img1.jpg",
+          "icon_01": "./assets/img/index/line-up/icon1.png",
+          "logo_01": "./assets/img/index/line-up/logo1.png",
+          "logo_01_sp": "./assets/img/index/line-up/logo1-sp.png",
+          "des": "私たちにちょうどいい家"
+        },
+        {
+          "image_01": "./assets/img/index/line-up/img2.jpg",
+          "icon_01": "./assets/img/index/line-up/icon2.png",
+          "logo_01": "./assets/img/index/line-up/logo2.png",
+          "logo_01_sp": "./assets/img/index/line-up/logo1-sp.png",
+          "des": "ステップが楽しい、広々がうれしい"
+        },
+        {
+          "image_01": "./assets/img/index/line-up/img1.jpg",
+          "icon_01": "./assets/img/index/line-up/icon1.png",
+          "logo_01": "./assets/img/index/line-up/logo1.png",
+          "logo_01_sp": "./assets/img/index/line-up/logo1-sp.png",
+          "des": "私たちにちょうどいい家"
+        },
+        {
+          "image_01": "./assets/img/index/line-up/img3.jpg",
+          "icon_01": "./assets/img/index/line-up/icon3.png",
+          "logo_01": "./assets/img/index/line-up/logo3.png",
+          "logo_01_sp": "./assets/img/index/line-up/logo1-sp.png",
+          "des": "ZERO-CUBEがスマートになりました"
+        },
+        {
+          "image_01": "./assets/img/index/line-up/img2.jpg",
+          "icon_01": "./assets/img/index/line-up/icon2.png",
+          "logo_01": "./assets/img/index/line-up/logo2.png",
+          "logo_01_sp": "./assets/img/index/line-up/logo1-sp.png",
+          "des": "ステップが楽しい、広々がうれしい"
+        }
+      ]
+    },
+    "library": {
+      "title": "library",
+      "subtitle": "ライブラリー",
+      "des": "ライフスタイルや趣味を反映させたオシャレな注文住宅の施工事例をカテゴリーごとにご覧いただけます。<br>理想のアイデアやこれからの家づくりの参考にぜひご覧ください。"
+    },
+    "estatevoice": {
+      "list": [
+        {
+          "title": "real estate",
+          "subtitle": "不動産情報",
+          "image": "../assets/img/index/estatevoice01.jpg"
+        },
+        {
+          "title": "VOIce",
+          "subtitle": "お客様の声",
+          "image": "../assets/img/index/estatevoice02.jpg"
+        }
+      ]
+    },
+    "column": {
+      "title": "column",
+      "subtitle": "コラム",
+      "list": [
+        {
+          "day": "2021/10/04",
+          "status": "new",
+          "des": "YouTube動画「無駄のないシンプルな間取りの注文住宅がこちら」公開しました。"
+        },
+        {
+          "day": "2021/10/04",
+          "status": "new",
+          "des": "家事を楽にするランドリールーム！メリットデメリットとは？"
+        },
+        {
+          "day": "2021/10/04",
+          "des": "注文住宅づくりで後悔したくない！総予算決めのポイントとは？"
+        }
+      ]
+    }
+  },
+  "event": {
+    "title": "EVENT",
+    "subtitle": "イベント情報",
+    "image": "../assets/img/sidebar/sidebar-img1.png",
+    "logo": "../assets/img/sidebar/sidebar-logo1.png",
+    "text": "私たちにちょうどいい家",
+    "reserttl": "イベント来場予約",
+    "list": [
+      {
+        "linkdetail": "event-detail.html",
+        "image": "../assets/img/event/event-img1.jpg",
+        "cat": "見学会",
+        "status": "受付中",
+        "title": "期間限定公開！FREAK'S HOUSE モデルハウス見学会",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img2.jpg",
+        "cat": "相談会",
+        "status": "終了",
+        "title": "教えて！ゼロから始める家づくり相談会「建築費用まるわかり講座」",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img3.jpg",
+        "cat": "販売会",
+        "status": "満席",
+        "title": "1000万円（税別）～の家が棟数限定で登場！新商品販売会を開催します！",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img1.jpg",
+        "cat": "見学会",
+        "status": "受付中",
+        "title": "期間限定公開！FREAK'S HOUSE モデルハウス見学会",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img2.jpg",
+        "cat": "相談会",
+        "status": "終了",
+        "title": "教えて！ゼロから始める家づくり相談会「建築費用まるわかり講座」",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img3.jpg",
+        "cat": "販売会",
+        "status": "満席",
+        "title": "1000万円（税別）～の家が棟数限定で登場！新商品販売会を開催します！",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img1.jpg",
+        "cat": "見学会",
+        "status": "受付中",
+        "title": "期間限定公開！FREAK'S HOUSE モデルハウス見学会",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img2.jpg",
+        "cat": "相談会",
+        "status": "終了",
+        "title": "教えて！ゼロから始める家づくり相談会「建築費用まるわかり講座」",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      },
+      {
+        "image": "../assets/img/event/event-img3.jpg",
+        "cat": "販売会",
+        "status": "満席",
+        "title": "1000万円（税別）～の家が棟数限定で登場！新商品販売会を開催します！",
+        "time": "2022/08/27(土)〜 08/28(日)"
+      }
+    ],
+    "tabs": [
+      {
+        "text": "すべて",
+        "status": "is-active"
+      },
+      {
+        "text": "見学会"
+      },
+      {
+        "text": "相談会"
+      },
+      {
+        "text": "販売会"
+      },
+      {
+        "text": "その他"
+      }
+    ],
+    "tablettl": "イベント詳細",
+    "table": [
+      {
+        "dt": "開催期間",
+        "dd": "2022/08/27(土)〜 2022/08/28(日)"
+      },
+      {
+        "dt": "開催時間",
+        "dd": "10：00～17：00"
+      },
+      {
+        "dt": "住所",
+        "dd": "住所が入ります。"
+      },
+      {
+        "dt": "備考",
+        "dd": "完全予約制でのご案内となります。ご来場の際は、事前にWEBサイトにてご予約の上ご来場いただくようお願い致します。"
+      }
+    ]
+  },
+  "work": {
+    "title": "WORKS",
+    "subtitle": "施工事例",
+    "image": "../assets/img/sidebar/sidebar-img2.png",
+    "logo": "../assets/img/sidebar/sidebar-logo2.png",
+    "text": "私たちにちょうどいい家",
+    "list": [
+      {
+        "linkdetail": "works-detail.html",
+        "image": "../assets/img/work/work-img1.jpg",
+        "title": "趣味をシェアする、幸せな時間。大好きな車と、ガレージがある暮らし。"
+      },
+      {
+        "image": "../assets/img/work/work-img2.jpg",
+        "title": "ライフスタイルに合わせて楽しめる。変幻自在の四角い家。"
+      },
+      {
+        "image": "../assets/img/work/work-img3.jpg",
+        "title": "バルコニーでアウトドアを楽しむ。我が家のキャンプアイテム大集合！"
+      },
+      {
+        "image": "../assets/img/work/work-img1.jpg",
+        "title": "趣味をシェアする、幸せな時間。大好きな車と、ガレージがある暮らし。"
+      },
+      {
+        "image": "../assets/img/work/work-img2.jpg",
+        "title": "ライフスタイルに合わせて楽しめる。変幻自在の四角い家。"
+      },
+      {
+        "image": "../assets/img/work/work-img3.jpg",
+        "title": "バルコニーでアウトドアを楽しむ。我が家のキャンプアイテム大集合！"
+      },
+      {
+        "image": "../assets/img/work/work-img1.jpg",
+        "title": "趣味をシェアする、幸せな時間。大好きな車と、ガレージがある暮らし。"
+      },
+      {
+        "image": "../assets/img/work/work-img2.jpg",
+        "title": "ライフスタイルに合わせて楽しめる。変幻自在の四角い家。"
+      },
+      {
+        "image": "../assets/img/work/work-img3.jpg",
+        "title": "バルコニーでアウトドアを楽しむ。我が家のキャンプアイテム大集合！"
+      }
+    ]
+  },
+  "modelhouse": {
+    "title": "MODEL HOUSE",
+    "subtitle": "モデルハウス",
+    "image": "../assets/img/sidebar/sidebar-img2.png",
+    "logo": "../assets/img/sidebar/sidebar-logo2.png",
+    "text": "私たちにちょうどいい家",
+    "reserttl": "モデルハウス来場予約",
+    "list": [
+      {
+        "linkdetail": "modelhouse-detail.html",
+        "image": "../assets/img/modelhouse/modelhouse-img1.jpg",
+        "title": "西尾市矢曽根町モデルハウス",
+        "desc": "xx駅から車で約5分/xxICから車で約8分"
+      },
+      {
+        "image": "../assets/img/modelhouse/modelhouse-img2.jpg",
+        "title": "西尾市上矢田町モデルハウス",
+        "desc": "xx駅から車で約5分/xxICから車で約8分"
+      }
+    ],
+    "tablettl": "モデルハウス詳細",
+    "table": [
+      {
+        "dt": "営業時間",
+        "dd": "10：00～17：00"
+      },
+      {
+        "dt": "住所",
+        "dd": "住所が入ります。"
+      },
+      {
+        "dt": "アクセス",
+        "dd": "xx駅から車で約5分/xxICから車で約8分"
+      },
+      {
+        "dt": "備考",
+        "dd": "完全予約制でのご案内となります。ご来場の際は、事前にWEBサイトにてご予約の上ご来場いただくようお願い致します。ご相談いただきましたお客様に！QUOカード1000円分プレゼント！"
+      }
+    ]   
+  },
+  "estate": {
+    "title": "REAL ESTATE",
+    "subtitle": "不動産情報",
+    "list": [
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img1.jpg",
+        "status": "販売中",
+        "title": "【モデル販売】西尾市矢曽根町モデルハウス",
+        "location": "西尾市矢曽根町",
+        "area": "215.64m²（65.23坪）",
+        "price": "4,100"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img2.jpg",
+        "status": "販売中",
+        "title": "【住宅用地】西尾市矢曽根町籾山分譲地",
+        "location": "西尾市矢曽根町籾山",
+        "area": "131.54（39.79坪）〜146.14m²（",
+        "price": "1,400~2,000"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img3.jpg",
+        "status": "完売",
+        "title": "【モデル販売】つつじが丘モデルハウス",
+        "location": "西尾市矢曽根町つつじが丘",
+        "area": "215.64m²（65.23坪）",
+        "price": "4,100"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img1.jpg",
+        "status": "販売中",
+        "title": "【モデル販売】西尾市矢曽根町モデルハウス",
+        "location": "西尾市矢曽根町",
+        "area": "215.64m²（65.23坪）",
+        "price": "4,100"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img2.jpg",
+        "status": "販売中",
+        "title": "【住宅用地】西尾市矢曽根町籾山分譲地",
+        "location": "西尾市矢曽根町籾山",
+        "area": "131.54（39.79坪）〜146.14m²（",
+        "price": "1,400~2,000"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img3.jpg",
+        "status": "完売",
+        "title": "【モデル販売】つつじが丘モデルハウス",
+        "location": "西尾市矢曽根町つつじが丘",
+        "area": "215.64m²（65.23坪）",
+        "price": "4,100"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img1.jpg",
+        "status": "販売中",
+        "title": "【モデル販売】西尾市矢曽根町モデルハウス",
+        "location": "西尾市矢曽根町",
+        "area": "215.64m²（65.23坪）",
+        "price": "4,100"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img2.jpg",
+        "status": "販売中",
+        "title": "【住宅用地】西尾市矢曽根町籾山分譲地",
+        "location": "西尾市矢曽根町籾山",
+        "area": "131.54（39.79坪）〜146.14m²（",
+        "price": "1,400~2,000"
+      },
+      {
+        "linkdetail": "real-estate-detail.html",
+        "image": "../assets/img/estate/estate-img3.jpg",
+        "status": "完売",
+        "title": "【モデル販売】つつじが丘モデルハウス",
+        "location": "西尾市矢曽根町つつじが丘",
+        "area": "215.64m²（65.23坪）",
+        "price": "4,100"
+      }
+    ],
+    "slides": [
+      {
+        "image": "../assets/img/estate/estate-slide1.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estate-slide2.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estate-slide3.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estate-slide4.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estate-slide5.jpg"
+      }
+    ],
+    "descfree": [
+      {
+        "image": "../assets/img/estate/estatedt-img4.jpg",
+        "title":"灘丸山公園",
+        "desc":"『灘丸山公園』は、摩耶ケーブルに近い高台にある公園。広大な敷地と市街地や海を見渡せる眺望が魅力。"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img5.jpg",
+        "title":"篠原公園",
+        "desc":"『篠原公園』は杣谷川、日柳川、六甲川の3つの河川が合流し都賀川となる川に挟まれた場所にある公園です。"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img6.jpg",
+        "title":"かおる幼稚園",
+        "desc":"『かおる幼稚園』は、阪急神戸線「王子公園」駅から北方向へ徒歩12分、「薬師"
+      }
+    ],
+    "descimage": [
+      {
+        "image": "../assets/img/estate/estatedt-img7.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img8.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img9.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img10.jpg"
+      }
+    ],
+    "desclibrary": [
+      {
+        "image": "../assets/img/estate/estatedt-img11.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img12.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img13.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img14.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img11.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img12.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img13.jpg"
+      },
+      {
+        "image": "../assets/img/estate/estatedt-img14.jpg"
+      }
+    ],
+    "descproperty": [
+      {
+        "descproperty_list": [
+          {
+            "dt": "所在地",
+            "dd": "鹿児島県肝属郡肝付町富山962-11"
+          },
+          {
+            "dt": "価 格",
+            "dd": "商談中（見学可能）"
+          },
+          {
+            "dt": "土地面積",
+            "dd": "309.47㎡（93.61坪）"
+          },
+          {
+            "dt": "延床面積",
+            "dd": ""
+          },
+          {
+            "dt": "施工面積",
+            "dd": "121.00㎡（36.60坪）"
+          },
+          {
+            "dt": "設 備",
+            "dd": "電気、上水、井戸、下水、個別浄化、集中浄化、都市ガス、個別プロパン"
+          },
+          {
+            "dt": "駐車場",
+            "dd": "3台"
+          },
+          {
+            "dt": "交 通",
+            "dd": "東笠之原バス停　歩9分"
+          },
+          {
+            "dt": "校 区",
+            "dd": ""
+          },
+          {
+            "dt": "備 考",
+            "dd": "平坦地、閑静な住宅街、前面道路7.0ｍ 、庭広々、陽当り良好、一部持分あり"
+          },
+          {
+            "dt": "間取り",
+            "dd": "4LDK"
+          },
+          {
+            "dt": "構 造",
+            "dd": ""
+          },
+          {
+            "dt": "工 法",
+            "dd": "新築"
+          }
+    
+        ]
+      },
+      {
+        "descproperty_list": [
+          {
+            "dt": "築年月",
+            "dd": "平成31年1月完成"
+          },
+          {
+            "dt": "現 況",
+            "dd": "空家"
+          },
+          {
+            "dt": "土地権利",
+            "dd": "所有権"
+          },
+          {
+            "dt": "都市計画",
+            "dd": "非線引き区域"
+          },
+          {
+            "dt": "用途地域",
+            "dd": "無指定"
+          },
+          {
+            "dt": "建ぺい率",
+            "dd": "70%"
+          },
+          {
+            "dt": "容積率",
+            "dd": "400%"
+          },
+          {
+            "dt": "地 目",
+            "dd": "宅地"
+          },
+          {
+            "dt": "地 勢",
+            "dd": "平坦"
+          },
+          {
+            "dt": "接道状況",
+            "dd": "南西7.0m公道　接面2.81m"
+          },
+          {
+            "dt": "引渡し時期",
+            "dd": "相談"
+          },
+          {
+            "dt": "所在階",
+            "dd": ""
+          },
+          {
+            "dt": "取引態様",
+            "dd": "売主"
+          },
+          {
+            "dt": "条件",
+            "dd": ""
+          }
+        ]
+      }
+      
+
+
+
+
+      
+    ]
+  },
+  "company": {
+    "title": "COMPANY",
+    "subtitle": "会社情報",
+    "company_list": [
+      {
+        "title": "会社概要",
+        "iframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.988017565!2d137.00980577627678!3d35.032029665362295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60049d7a7b9d40a5%3A0x8b2fe518c54058f1!2z5pel5pys44CB44CSNDQ4LTAwMDUg5oSb55-l55yM5YiI6LC35biC5LuK5bed55S66JOu5rGg77yT77yT!5e0!3m2!1sja!2s!4v1692263342892!5m2!1sja!2s' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+        "list_item": [
+          {
+            "name": "社名",
+            "text": "有限会社 AT HOME（エーティーホーム）"
+          },
+          {
+            "name": "代表者名",
+            "text": "藤井 厚年"
+          },
+          {
+            "id": "tel",
+            "tel": "0566-45-6070",
+            "tel_text": "TEL：",
+            "fax_text": "/ FAX：0566-45-6071",
+            "name": "TEL/FAX",
+            "text": "TEL：0566-45-6070 / FAX：0566-45-6071"
+          },
+          {
+            "id": "email",
+            "email": "at-home@a.email.ne.jp",
+            "name": "e-mail",
+            "text": "at-home@a.email.ne.jp"
+          },
+          {
+            "name": "設立",
+            "text": "2003 年 6 月 5 日"
+          },
+          {
+            "name": " 資本金",
+            "text": "300 万円"
+          },
+          {
+            "name": " 社員数 ",
+            "text": "15 名（2022 年 10 月現在）"
+          },
+          {
+            "name": "事業内容",
+            "text": "建設事業・不動産事業・設備事業"
+          },
+          {
+            "name": "許認可等",
+            "text": "一般建築業許可　愛知県知事　第 57482 号<br>宅地建物取引業　愛知県知事　第 21638 号"
+          },
+          {
+            "name": "所在地",
+            "text": "〒448-0005　愛知県刈谷市今川町蓮池 33 番地 5"
+          }
+        ]
+      },
+      {
+        "title": "沿革",
+        "list_item": [
+          {
+            "name": "2003 年（平成 15 年）6 月",
+            "text": "愛知郡東郷町大字春木字白土 1 番地 223 にて設立"
+          },
+          {
+            "name": "2003 年（平成 15 年）9 月",
+            "text": "愛知県刈谷市泉田町絵下城 196 番へ本社移転"
+          },
+          {
+            "name": "2003 年（平成 15 年）10 月",
+            "text": "愛知県刈谷市今川町蓮池 33 番地 5 へ本社移転"
+          }
+        ]
+      }
+    ]
+  },
+  "policy": {
+    "title": "PRIVACY POLICY",
+    "subtitle": "プライバシーポリシー"
+  },
+  "column":{
+    "title": "COLUMN",
+    "subtitle": "コラム",
+    "title_list": "社員ブログの記事",
+    "count": "（8 件）",
+    "button_post": {
+      "url": "#",
+      "txt": "ブログトップ"
+    },
+    "list":[
+      {
+        "url": "./column-detail.html",
+        "image": "./assets/img/column/column_img01.jpg",
+        "day": "2020/11/11",
+        "title": "満員御礼！限定見学会が終了いたしました。",
+        "status": "new",
+        "cat": [
+          {
+            "title": "社員ブログ"
+          },
+          {
+            "title": "コラム"
+          }
+        ],
+        "des": "おはようございます！ 営業アシスタントの南原です  &nbsp;&nbsp;気が付けばもう10月も明日で終わりですね＞＜ 事務所にも先週......"
+      },
+      {
+        "url": "./column-detail.html",
+        "image": "./assets/img/column/column_img02.jpg",
+        "day": "2020/11/11",
+        "title": "満員御礼！限定見学会が終了いたしました。",
+        "status": "new",
+        "cat": [
+          {
+            "title": "社員ブログ"
+          },
+          {
+            "title": "コラム"
+          }
+        ],
+        "des": "おはようございます！ 営業アシスタントの南原です  &nbsp;&nbsp;気が付けばもう10月も明日で終わりですね＞＜ 事務所にも先週......"
+      },
+      {
+        "url": "./column-detail.html",
+        "image": "./assets/img/column/column_img03.jpg",
+        "day": "2020/11/11",
+        "title": "満員御礼！限定見学会が終了いたしました。",
+        "cat": [
+          {
+            "title": "社員ブログ"
+          },
+          {
+            "title": "コラム"
+          }
+        ],
+        "des": "おはようございます！ 営業アシスタントの南原です  &nbsp;&nbsp;気が付けばもう10月も明日で終わりですね＞＜ 事務所にも先週......"
+      },
+      {
+        "url": "./column-detail.html",
+        "image": "./assets/img/column/column_img04.jpg",
+        "day": "2020/11/11",
+        "title": "満員御礼！限定見学会が終了いたしました。",
+        "cat": [
+          {
+            "title": "お家づくり進行中"
+          }
+        ],
+        "des": "おはようございます！ 営業アシスタントの南原です  &nbsp;&nbsp;気が付けばもう10月も明日で終わりですね＞＜ 事務所にも先週......"
+      },
+      {
+        "url": "./column-detail.html",
+        "image": "./assets/img/column/column_img04.jpg",
+        "day": "2020/11/11",
+        "title": "満員御礼！限定見学会が終了いたしました。",
+        "cat": [
+          {
+            "title": "社員ブログ"
+          }
+        ],
+        "des": "おはようございます！ 営業アシスタントの南原です  &nbsp;&nbsp;気が付けばもう10月も明日で終わりですね＞＜ 事務所にも先週......"
+      }
+    ],
+    "siderbar":[
+      {
+        "id": "search",
+        "title": "キーワード検索",
+        "btn": "検索"
+      },
+      {
+        "title": "最新記事",
+        "menu":[
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "「芸術テロリスト」"
+          },
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "手起こし上棟、頑張りました。"
+          },
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "残りものの秋と小さな一歩"
+          },
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "本格的な冬の訪れ"
+          },{
+            "url" : "./column-detail",
+            "menu_lv1": "大安での上棟です"
+          }
+        ]
+      },
+      {
+        "title": "テーマ",
+        "menu":[
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "お家づくり進行中"
+          },
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "社員ブログ"
+          },
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "コラム"
+          }
+        ]
+      },
+      {
+        "title": "アーカイブ",
+        "menu":[
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "2021年",
+            "menu_lv2": [
+              {
+                "url" : "./column-detail",
+                "text": "7月(10)"
+              },
+              {
+                "url" : "./column-detail",
+                "text": "6月(8)"
+              },
+              {
+                "url" : "./column-detail",
+                "text": "5月(13)"
+              },
+              {
+                "url" : "./column-detail",
+                "text": "4月(11)"
+              }
+            ]
+          },
+          {
+            "url" : "./column-detail",
+            "menu_lv1": "2020年",
+            "menu_lv2": [
+              {
+                "url" : "./column-detail",
+                "text": "7月(10)"
+              },
+              {
+                "url" : "./column-detail",
+                "text": "6月(8)"
+              },
+              {
+                "url" : "./column-detail",
+                "text": "5月(13)"
+              },
+              {
+                "url" : "./column-detail",
+                "text": "4月(11)"
+              }
+            ]
+          }
+        
+        ]
+      }
+    ]
+  }
+
+}

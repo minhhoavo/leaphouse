@@ -1,0 +1,102 @@
+<%- include('_layouts/layout', { title: 'Event detail page' }); -%>   
+<!-- @content -->
+<main class="event-detail">
+    <section class="event-detail__inner l-container">
+        <div class="event-detail__top">
+            <div class="event-detail__cat">
+                <span class="c-list1__cat">見学会</span>
+                <span class="c-list1__status">受付中</span>
+            </div>
+            <h2 class="event-detail__ttl c-ttl__san40">オリジナルプランを見学しよう！モデルハウス内覧会</h2>
+            <p class="event-detail__time c-txt__san16">2022/08/27(土)〜 08/28(日)</p>
+        </div>
+        <div class="event-detail__content">
+            <div class="event-detail__left">
+                <div class="event-detail__image"><img class="event-detail__img" src="../assets/img/event/eventdetail-img1.jpg" alt="オリジナルプランを見学しよう！モデルハウス内覧会"></div>
+                <p class="event-detail__desc c-txt__san16">
+                    オリジナルプランでつくる、"らしさ"の詰まった豊かな暮らし<br>
+                    2022年4月23日、焼津市八楠にオレンジハウスの新たなモデルハウスがオープン！<br><br>              
+                    土間リビングと繋がる大開口バルコニーのある空間、家族で過ごせる開放的な中庭ウッドデッキを囲む間取りなど、趣味やライフスタイルを暮らしの中心に描いた、オリジナルプランのモデルハウス2棟をご覧いただけます。<br><br>
+                    モデルハウスをご覧いただきながら、あなたが思い描く暮らしについてお聞かせください。また土地や資金計画のご案内、建て替えや住み替えのご相談もお任せください。
+                </p>
+                <%- include('_partials/table',{
+                    tablettl: event.tablettl
+                }); -%>
+                <div class="event-detail__compare">
+                    <h2 class="c-ttlborder c-ttl__san32">ウッドデッキ × 土間のある家</h2>
+                    <div class="event-detail__compareimg"><img class="event-detail__img" src="../assets/img/event/eventdetail-img2.jpg" alt="ウッドデッキ×土間のある家"></div>
+                    <p class="event-detail__desc c-txt__san16">
+                        広々としたデッキへとつながるLDK。<br>
+                        開放的なオープンキッチンは、家族とのコミュニケーションも取りやすく、お家全体を見渡しながら家事をこなせます。<br><br>
+                        吹き抜けのある土間は、大きな窓からたっぷりの自然光が入る心地よい空間。イスやテーブルを置いてのんびり寛いだり、お子さんや愛犬と一緒に遊んだり…暮らしに合わせて様々なシーンで活用できます。<br><br>
+                        回遊式の間取りとなっており、独立した洗面室やランドリールームは十分な広さを確保。毎日利用する場所だからこそ、使いやすさを重視しプランニングしています。また働き方やライフスタイルの変化に合わせて活用できるワークスペースを設け、より快適におうち時間を過ごせます。
+                    </p>
+                </div>
+            </div>
+            <div class="event-detail__right">
+                <%- include('_partials/sidebar', {
+                    image: event.image, 
+                    logo: event.logo,
+                    text: event.text
+                }); -%>
+            </div>
+        </div>
+    </section>
+    <section class="c-infor">
+        <div class="c-infor__inner l-container">
+            <div class="c-infor__left">
+                <div class="c-infor__image"><img class="c-infor__img" src="../assets/img/event/eventdetail-img3.jpg" alt="予約はこちら"></div>               
+                <div class="c-btnall03 c-btnall03--red">
+                    <a href="#" class="c-btnall03__link c-txt__ac16b">
+                      <span>
+                        予約はこちら
+                      </span>
+                    </a>
+                </div>
+            </div>
+            <div class="c-infor__right">
+                <h2 class="c-infor__ttl1 c-ttl__san20b">ご予約はお電話でも受け付けています！</h2>
+                <p class="c-infor__num c-txt__ac50"><span class="c-infor__tel c-txt__ac32">tel.</span>0566-45-6070</p>
+                <p class="c-infor__time c-txt__san16">9:00～17:00（土日祝日も受付）定休日：毎週水曜日、第2・4木曜日</p>
+                <h2 class="c-infor__ttl2 c-ttl__san20b">オリジナルプランを見学しよう！モデルハウス内覧会</h2>
+                <div class="c-infor__table c-txt__san16">
+                    <div class="c-infor__row">
+                        <p class="c-infor__txtleft">開催期間</p>
+                        <p class="c-infor__txtright">2022/08/27(土)〜 2022/08/28(日)</p>
+                    </div>
+                    <div class="c-infor__row">
+                        <p class="c-infor__txtleft">開催時間</p>
+                        <p class="c-infor__txtright">10：00～17：00</p>
+                    </div>
+                    <div class="c-infor__row">
+                        <p class="c-infor__txtleft">住所</p>
+                        <p class="c-infor__txtright">住所が入ります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('_partials/form', {
+        reserttl: event.reserttl
+    }); -%>
+    <section class="event-detail__other">
+        <div class="event-detail__otherwrap l-container">
+            <h2 class="event-detail__otherttl c-ttl__san32">その他のイベント</h2>
+            <ul class="c-list1 c-col3 ">
+                <% event.list && event.list.slice(0,3).forEach(event=> { %>
+                    <%- include('_partials/eventItem', {
+                        event: event, classNameItem: "c-item"
+                    }); -%>
+                <%})%>
+            </ul>
+            <div class="c-btnall01 c-btnall01--transform">
+                <a href="#" class="c-btnall01__link c-txt__ac16b">
+                  <span>
+                    <%= button.view_all %>
+                  </span>
+                </a>
+              </div>
+        </div>
+    </section>
+</main>
+<!-- @@content -->

@@ -1,0 +1,28 @@
+/*------------------------------------------------------------
+table
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-table__main {
+    margin: 18px 0 72px;
+}
+
+.c-table__row {
+    display: flex;
+    padding: 24px 8px 21px 18px;
+    line-height: 1.88;
+
+    @include sp {
+        flex-direction: column;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $color--ddd;
+    }
+}
+
+.c-table__dt {
+    width: 124px;
+    flex-shrink: 0;
+}

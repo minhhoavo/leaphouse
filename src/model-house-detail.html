@@ -1,0 +1,64 @@
+<%- include('_layouts/layout', { title: 'Model house detail page' }); -%>   
+<!-- @content -->
+<main class="modelhouse-detail">
+    <section class="modelhouse-detail__inner l-container">
+        <div class="modelhouse-detail__top">
+            <h2 class="modelhouse-detail__ttl c-ttl__san40">西尾市矢曽根町モデルハウス</h2>
+            <p class="modelhouse-detail__caption c-txt__san16">xx駅から車で約5分/xxICから車で約8分</p>
+        </div>
+        <div class="modelhouse-detail__content">
+            <div class="modelhouse-detail__left">
+                <div class="modelhouse-detail__image">
+                    <img class="modelhouse-detail__img" src="../assets/img/modelhouse/modelhousedt-img1.jpg" alt="西尾市矢曽根町モデルハウス">
+                </div>
+                <p class="modelhouse-detail__desc c-txt__san16">
+                    ◆矢曽根町◆小学校徒歩１０分◆西尾駅まで徒歩13分◆南向き<br>
+                    ～自然も利便も兼ね備える、お子様のやりがいを育む街、矢曽根でお得に好みのスタイルを～<br>
+                    ・西尾駅まで徒歩１３分の近さで、家事に送　　り迎え…忙しい朝も大助かり！<br>
+                    ・駅からの帰り道は商業施設が多く、帰りに買い物に立ち寄るのに便利！<br>
+                    ・通学路が整備され、歩道幅も広く徒歩１１分の花の木小学校までも安心安全！<br>
+                    ～豊富なプランをお得に建てる。細かな仕様や生活を豊かにする性能を担保～<br><br>
+                    今回の見学＆販売会は、購入をご検討いただけるお客さまだけでなく、<br>
+                    これからおうちづくりをされるお客さまも、もちろん大歓迎です！<br><br>
+                    この機会にぜひ、お気軽にご参加ください(*^^*)♪
+                </p>
+                <div class="c-btnall03 c-btnall03--red">
+                    <a href="#" class="c-btnall03__link c-txt__ac16b">
+                      <span>
+                        予約はこちら
+                      </span>
+                    </a>
+                </div>
+                <h2 class="c-ttlborder c-ttl__san32">シンプルだから、そのままでも、アレンジしても楽しい。</h2>
+                <div class="modelhouse-detail__imagegroup">
+                    <%- include('_partials/library'); -%>
+                </div>  
+            </div>
+            <div class="modelhouse-detail__right">
+                <%- include('_partials/sidebar', {
+                    image: modelhouse.image, 
+                    logo: modelhouse.logo,
+                    text: modelhouse.text
+                }); -%>
+            </div>    
+        </div>
+        <div class="modelhouse-detail__tbinner l-container l-container--w1000">
+            <%- include('_partials/table',{
+                tablettl: modelhouse.tablettl,
+                event: modelhouse
+            }); -%>     
+        </div>     
+    </section>  
+    <section class="c-infor">
+        <div class="modelhouse-detail__inforinner l-container">
+            <h2 class="modelhouse-detail__inforttl c-ttl__san32">ご予約は、お電話、予約フォームで承っております。</h2>
+            <p class="modelhouse-detail__infortxt c-txt__san16">家づくりの参考になる「リアルな情報」が満載です！<br>下記のお電話、予約フォームよりお気軽にお申込みください。</p>
+            <p class="c-infor__num c-txt__ac50"><span class="c-infor__tel c-txt__ac32">tel.</span>0566-45-6070</p>
+            <p class="c-infor__time c-txt__san16">9:00～17:00（土日祝日も受付）定休日：毎週水曜日</p>
+        </div>
+    </section>
+    <%- include('_partials/form', {
+        reserttl: modelhouse.reserttl
+    }); -%>
+</main>
+<!-- @@content -->

@@ -1,0 +1,35 @@
+<%- include('_layouts/layout', { title: 'Model house page' }); -%>
+    
+    <!-- @content -->
+    <main class="modelhouse">
+        <%- include('_partials/pagetitle', {
+            title: modelhouse.title, subtitle: modelhouse.subtitle
+        }); -%>
+        <section class="modelhouse-main l-container l-container--w1000">
+            <div class="modelhouse-main__content">
+                <ul class="c-list1 c-col1 ">
+                    <% modelhouse.list && modelhouse.list.forEach(modelhouse=> { %>
+                    <li class="c-list1__item">
+                        <div class="c-list1__image"><img class="c-list1__img" src="<%- modelhouse.image %>" alt="<%- modelhouse.title %>"></div>
+                        <div class="c-list1__content">
+                            <div class="c-list1__contenttxt">
+                                <h2 class="c-list1__ttl c-ttl__san32"><%- modelhouse.title %></h2>
+                                <p class="c-list1__ttl c-ttl__san16"><%- modelhouse.desc %></p>
+                            </div>
+                            <div class="c-list1__contentbtn">
+                                <div class="c-btnall03">
+                                    <a href="model-house-detail.html" class="c-btnall03__link c-txt__ac16b">
+                                        <span>
+                                        <%= button.view_more %>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <%})%>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- @@content -->

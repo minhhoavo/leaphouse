@@ -1,0 +1,11 @@
+<div class="c-table">
+    <h2 class="c-ttlborder c-ttl__san32"><%- tablettl %></h2>
+    <dl class="c-table__main">
+        <% event.table && event.table.forEach(table=> { %>
+        <div class="c-table__row c-txt__san16">
+            <dt class="c-table__dt"><%- table.dt %></dt>
+            <dd class="c-table__dd"><%- table.dd %></dd>
+        </div>
+        <%})%>
+    </dl>
+</div>

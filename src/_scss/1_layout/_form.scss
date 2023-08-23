@@ -1,0 +1,158 @@
+.c-form {
+    margin: 78px 0 50px;
+}
+
+.c-form__ttl {
+    text-align: center;
+}
+
+.c-form__desc {
+    margin: 34px 0 15px;
+    line-height: 1.88;
+}
+
+.c-form__row {
+    display: flex;
+    padding: 50px 0 49px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $color--ccc;
+    }
+
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.c-form__labelarea {
+    font-size: 1.6rem;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include tab {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .c-form__note {
+        background-color: $color--dc3175;
+        padding: 2px 9px;
+        color: $color--fff;
+        display: inline-block;
+        margin-left: 20px;
+    }
+}
+
+.c-form__inputarea {
+    width: 72%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tab {
+        width: 100%;
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .c-form__input {
+        padding: 23px 20px;
+        border: none;
+        background: $color--f1f3f8;
+        width: 100%;
+    }
+}
+
+.c-form__bookingdate {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    @include tab {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .c-form__select {
+        width: calc(100% - 35px);
+    }
+
+    .c-form__icon {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .c-form__input {
+        cursor: pointer;
+        max-width: 240px;
+
+        @include tab {
+            max-width: calc(100% - 37px);
+        }
+    }
+}
+
+.c-form__arrivaltime {
+    width: 48%;
+    display: flex;
+    align-items: center;
+
+    @include tab {
+        width: 100%;
+    }
+
+    .c-form__select {
+        width: calc(100% - 37px);
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 9px;
+            width: 11px;
+            transform: translateY(-50%);
+            right: 8px;
+            top: 53%;
+            background-image: url("../assets/img/icon/arrow-down.svg");
+            background-size: 80%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .c-form__icon {
+        margin-left: 13px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .c-form__input {
+        max-width: 240px;
+        position: relative;
+
+        @include tab {
+            max-width: calc(100% - 35px);
+        }
+    }
+}
+
+::placeholder {
+    font-size: 1.5rem;
+    color: $color--999;
+}
+
+
+
